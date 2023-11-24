@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "tourImage": "adventure.jpg",
+      "tourType": "Adventure",
+      "tripTitle": "Mountain Expedition",
+      "price": 1500
+    },
+    {
+      "id": 2,
+      "tourImage": "cultural.jpg",
+      "tourType": "Cultural",
+      "tripTitle": "Historical Heritage Tour",
+      "price": 1200
+    },
+    {
+      "id": 3,
+      "tourImage": "beach.jpg",
+      "tourType": "Beach",
+      "tripTitle": "Tropical Paradise Getaway",
+      "price": 1800
+    },
+    {
+      "id": 4,
+      "tourImage": "safari.jpg",
+      "tourType": "Wildlife Safari",
+      "tripTitle": "Serengeti Adventure",
+      "price": 2000
+    },
+    {
+      "id": 5,
+      "tourImage": "city.jpg",
+      "tourType": "City Exploration",
+      "tripTitle": "Urban Wonders Tour",
+      "price": 1300
+    },
+    {
+      "id": 6,
+      "tourImage": "cruise.jpg",
+      "tourType": "Luxury Cruise",
+      "tripTitle": "Mediterranean Cruise",
+      "price": 2500
+    }
+  ]
