@@ -1,44 +1,146 @@
 [
-    {
-      "id": 1,
-      "tourImage": "adventure.jpg",
-      "tourType": "Adventure",
-      "tripTitle": "Mountain Expedition",
-      "price": 1500
-    },
-    {
-      "id": 2,
-      "tourImage": "cultural.jpg",
-      "tourType": "Cultural",
-      "tripTitle": "Historical Heritage Tour",
-      "price": 1200
-    },
-    {
-      "id": 3,
-      "tourImage": "beach.jpg",
-      "tourType": "Beach",
-      "tripTitle": "Tropical Paradise Getaway",
-      "price": 1800
-    },
-    {
-      "id": 4,
-      "tourImage": "safari.jpg",
-      "tourType": "Wildlife Safari",
-      "tripTitle": "Serengeti Adventure",
-      "price": 2000
-    },
-    {
-      "id": 5,
-      "tourImage": "city.jpg",
-      "tourType": "City Exploration",
-      "tripTitle": "Urban Wonders Tour",
-      "price": 1300
-    },
-    {
-      "id": 6,
-      "tourImage": "cruise.jpg",
-      "tourType": "Luxury Cruise",
-      "tripTitle": "Mediterranean Cruise",
-      "price": 2500
-    }
-  ]
+  {
+    "id": 1,
+    "tour_image": "https://i.ibb.co/V9ffKDF/cynthia-magana-m-FPJXEQfb9-M-unsplash.jpg",
+    "tour_type": "Adventure",
+    "trip_title": "Mountain Explorer",
+    "price": 1200,
+    "day1_activity": "Hiking Adventure",
+    "day1_description": "Arrive at the destination and check into the hotel.",
+    "day2_activity": "River Rafting",
+    "day2_description": "Exciting river rafting experience."
+  },
+  {
+    "id": 2,
+    "tour_image": "https://i.ibb.co/D5Jkp1L/3.jpg",
+    "tour_type": "Adventure",
+    "trip_title": "New Adventure Expedition",
+    "price": 1500,
+    "day1_activity": "Mountain Trekking",
+    "day1_description": "Start the day with a challenging mountain trek.",
+    "day2_activity": "Canyoning Adventure",
+    "day2_description": "Thrilling canyoning experience in the wilderness."
+  },  
+  {
+    "id": 3,
+    "tour_image": "https://i.ibb.co/kmqbYLX/abdul-muiz-khan-MYHEw-IEoegg-unsplash.jpg",
+    "tour_type": "Adventure",
+    "trip_title": "Desert Safari Expedition",
+    "price": 1600,
+    "day1_activity": "Dune Bashing Adventure",
+    "day1_description": "Embark on an adrenaline-pumping dune bashing adventure.",
+    "day2_activity": "Sandboarding Experience",
+    "day2_description": "Enjoy the thrill of sandboarding on the vast desert dunes."
+  },  
+  {
+    "id": 4,
+    "tour_image": "https://i.ibb.co/kMt741Z/bjorn-pierre-GE-x38x-Ceb-Q-unsplash.jpg",
+    "tour_type": "Cultural",
+    "trip_title": "Heritage Discovery",
+    "price": 1500,
+    "day1_activity": "Historical City Tour",
+    "day1_description": "Explore the historical landmarks of the city.",
+    "day2_activity": "Museum Visits",
+    "day2_description": "Visit local museums and learn about the culture."
+  },
+  {
+    "id": 5,
+    "tour_image": "https://i.ibb.co/r0hbbyd/budi-puspa-wijaya-Lcv7dqnw5-Y4-unsplash.jpg",
+    "tour_type": "Cultural",
+    "trip_title": "Cultural Heritage Expedition",
+    "price": 1750,
+    "day1_activity": "Architectural Wonders Tour",
+    "day1_description": "Discover the architectural wonders and historical sites.",
+    "day2_activity": "Local Artisan Workshops",
+    "day2_description": "Immerse yourself in the local culture by visiting artisan workshops."
+  },
+  {
+    "id": 6,
+    "tour_image": "https://i.ibb.co/prCRtsS/4.jpg",
+    "tour_type": "Beach",
+    "trip_title": "Sun and Sand Getaway",
+    "price": 800,
+    "day1_activity": "Relaxation Day at the Beach",
+    "day1_description": "Enjoy a leisure day by the sea.",
+    "day2_activity": "Water Sports",
+    "day2_description": "Participate in exciting water sports activities."
+  },
+  {
+    "id": 7,
+    "tour_image": "https://i.ibb.co/800P60d/vidar-nordli-mathisen-Avn-XCFX25-GA-unsplash.jpg",
+    "tour_type": "Beach",
+    "trip_title": "Tropical Paradise Retreat",
+    "price": 950,
+    "day1_activity": "Beachfront Relaxation",
+    "day1_description": "Indulge in a day of pure relaxation by the serene beachfront.",
+    "day2_activity": "Snorkeling Adventure",
+    "day2_description": "Embark on a snorkeling adventure to explore the vibrant marine life."
+  },
+  {
+    "id": 8,
+    "tour_image": "https://i.ibb.co/cLMBgtf/link-hoang-Uoq-AR2p-Ox-Mo-unsplash.jpg",
+    "tour_type": "Beach",
+    "trip_title": "Island Adventure Retreat",
+    "price": 1200,
+    "day1_activity": "Beach Picnic and Sunset Cruise",
+    "day1_description": "Experience a beach picnic followed by a romantic sunset cruise.",
+    "day2_activity": "Kayaking Expedition",
+    "day2_description": "Explore the coastal wonders with a thrilling kayaking expedition."
+  },    
+  {
+    "id": 9,
+    "tour_image": "https://i.ibb.co/XSzXKwB/bibhash-polygon-cafe-banerjee-bgzp-REiqplc-unsplash.jpg",
+    "tour_type": "Safari",
+    "trip_title": "Serengeti Expedition",
+    "price": 2000,
+    "day1_activity": "Arrival and Check-in",
+    "day1_description": "Arrive at the safari lodge and check-in.",
+    "day2_activity": "Game Drives",
+    "day2_description": "Embark on thrilling game drives in the wild."
+  },
+  {
+    "id": 10,
+    "tour_image": "https://i.ibb.co/hF3mpLC/bibhash-polygon-cafe-banerjee-RDJJjf-Jdn-A-unsplash.jpg",
+    "tour_type": "Safari",
+    "trip_title": "Wildlife Discovery Safari",
+    "price": 2200,
+    "day1_activity": "Safari Lodge Welcome",
+    "day1_description": "Warm welcome at the safari lodge and check-in to your comfortable accommodation.",
+    "day2_activity": "Bush Walk and Bird Watching",
+    "day2_description": "Explore the wilderness on a guided bush walk and indulge in bird watching."
+  },  
+  {
+    "id": 11,
+    "tour_image": "https://i.ibb.co/t4vJXRH/1.webp",
+    "tour_type": "City",
+    "trip_title": "Urban Adventure",
+    "price": 1000,
+    "day1_activity": "Arrival and Check-in",
+    "day1_description": "Arrive at the wellness resort and check into your peaceful retreat.",
+    "day2_activity": "City Landmarks Tour",
+    "day2_description": "Explore iconic landmarks of the city."
+  },
+  {
+    "id": 12,
+    "tour_image": "https://i.ibb.co/tb7rhFY/2.jpg",
+    "tour_type": "City",
+    "trip_title": "Metropolitan Discovery",
+    "price": 1200,
+    "day1_activity": "Hotel Arrival and Relaxation",
+    "day1_description": "Arrive at the stylish city hotel and relax in your urban retreat.",
+    "day2_activity": "Cultural District Exploration",
+    "day2_description": "Immerse yourself in the cultural richness of the city's vibrant districts."
+  },
+  {
+    "id": 13,
+    "tour_image": "https://i.ibb.co/xFvqCtB/yaron-cohen-Yj-OE3-Jmcl-Ic-unsplash.jpg",
+    "tour_type": "City",
+    "trip_title": "Modern Urban Escape",
+    "price": 1300,
+    "day1_activity": "Luxury Hotel Check-in",
+    "day1_description": "Check into a luxurious city hotel, setting the tone for your modern urban escape.",
+    "day2_activity": "Shopping and Culinary Adventure",
+    "day2_description": "Embark on a shopping spree and indulge in a culinary adventure in the city's vibrant scene."
+  }
+  
+]
