@@ -14,6 +14,7 @@ import AboutUs from "../components/AboutUs";
 import Stories from "../Pages/Home/Tourism_and_Travel_Guide/Stories/Stories";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import StoryDetails from "../Pages/Home/Tourism_and_Travel_Guide/Stories/StoryDetails";
+import Community from "../Pages/Home/Home/Community/Community";
 
 
 export const router = createBrowserRouter([
@@ -45,7 +46,11 @@ export const router = createBrowserRouter([
         {
           path: '/storyDetails/:id',
           element: <StoryDetails></StoryDetails>,
-          loader: () => fetch('story.json')
+          loader: () => fetch('http://localhost:5000/stories')
+        },
+        {
+          path: '/community',
+          element: <Community></Community>
         },
         {
           path: 'aboutUs',

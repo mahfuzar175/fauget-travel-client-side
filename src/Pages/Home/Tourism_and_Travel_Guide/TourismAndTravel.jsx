@@ -2,7 +2,6 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Overview from "./Overview";
 import OurPackages from "./OurPackages/OurPackages";
-import Stories from "./Stories/Stories";
 const TourismAndTravel = () => {
   return (
     <div className="mt-16">
@@ -25,7 +24,7 @@ const TourismAndTravel = () => {
             <OurPackages></OurPackages>
           </TabPanel>
           <TabPanel>
-            <Stories></Stories>
+            <h2>tarek</h2>
           </TabPanel>
         </Tabs>
       </div>

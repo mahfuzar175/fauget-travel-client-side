@@ -4,7 +4,7 @@ const useStory = () =>{
     const [story, setStory] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() =>{
-        fetch('story.json')
+        fetch('http://localhost:5000/stories')
         .then(res => res.json())
         .then(data => {
             setStory(data)
