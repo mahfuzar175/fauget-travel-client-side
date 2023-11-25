@@ -1,22 +1,43 @@
 [
     {
-        "id": 1,
-        "title": "A Day in Paris",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+      "id": 1,
+      "spot_name": "Golden Gate Bridge",
+      "location": "San Francisco, USA",
+      "posted_date": "3 days ago",
+      "tourist_image": "https://i.ibb.co/pfXD4rh/member1.png",
+      "tourist_name": "Alex",
+      "journey_review": "Explored the Golden Gate Park nearby and then walked across the bridge. The architecture atmosphere is so calming.",
+      "rating": 4
     },
     {
-        "id": 2,
-        "title": "Exploring the Grand Canyon",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+      "id": 2,
+      "spot_name": "Eiffel Tower",
+      "location": "Paris, France",
+      "posted_date": "7 days ago",
+      "tourist_image": "https://i.ibb.co/BZKTMdD/member2.png",
+      "tourist_name": "Sophie",
+      "journey_review": "Visited the Eiffel Tower at night when it was all lit up. It was a magical experience. The cityscape from the top is breathtaking!",
+      "rating": 5
     },
     {
-        "id": 3,
-        "title": "Adventures in Tokyo",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+      "id": 3,
+      "spot_name": "Machu Picchu",
+      "location": "Cusco, Peru",
+      "posted_date": "3 days ago",
+      "tourist_image": "https://i.ibb.co/BZKTMdD/member2.png",
+      "tourist_name": "Isabella",
+      "journey_review": "Explored the history of the Incas and marveled at the precision of the stone architecture. Machu Picchu is a true wonder!",
+      "rating": 4
     },
     {
-        "id": 4,
-        "title": "Beach Bliss in Bali",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+      "id": 4,
+      "spot_name": "Great Barrier Reef",
+      "location": "Queensland, Australia",
+      "posted_date": "11 days ago",
+      "tourist_image": "https://i.ibb.co/FDZH1Br/member3.png",
+      "tourist_name": "Oliver",
+      "journey_review": "Snorkeled at the Great Barrier Reef and witnessed the vibrant coral and diverse marine life. A dream come true for any nature lover!",
+      "rating": 5
     }
-]
+  ]
+  

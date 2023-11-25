@@ -11,12 +11,15 @@ import PrivateRoute from './PrivateRoute';
 import Dashboard from "../Layout/Dashboard";
 import ContactUs from "../components/ContactUs";
 import AboutUs from "../components/AboutUs";
+import Stories from "../Pages/Home/Tourism_and_Travel_Guide/Stories/Stories";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
         {
             path: '/',
@@ -33,6 +36,10 @@ export const router = createBrowserRouter([
         {
           path: '/signup',
           element: <SignUp></SignUp>
+        },
+        {
+          path: '/story',
+          element: <Stories></Stories>
         },
         {
           path: 'aboutUs',
