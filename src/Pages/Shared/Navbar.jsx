@@ -31,7 +31,7 @@ const Navbar = () => {
         <NavLink to="/order/salad">ABOUT US</NavLink>
       </li>
       <li>
-        <NavLink to="/order/salad">CONTACT US</NavLink>
+        <NavLink to="/contactUs">CONTACT US</NavLink>
       </li>
       <li>
         <NavLink to="/secret">Cecret</NavLink>
@@ -106,7 +106,22 @@ const Navbar = () => {
           </a>
         </li>
         <li><NavLink to="/dashboard">Dashboard</NavLink></li>
-        <li><NavLink to="/login">Login</NavLink></li>
+        {user ? (
+        <>
+          {/*<li><span>{user?.displayName}</span></li>*/}
+          <li>
+            <button onClick={handleLogOut} className="btn btn-ghost text-sm">
+              Logout
+            </button>
+          </li>
+        </>
+      ) : (
+        <>
+          <li>
+            <NavLink to="/login">Login</NavLink>
+          </li>
+        </>
+      )}
       </ul>
     </div>
         </div>
