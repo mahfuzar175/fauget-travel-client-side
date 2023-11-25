@@ -4,6 +4,7 @@ import {
 import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import AllPacakges from "../Pages/Home/Tourism_and_Travel_Guide/OurPackages/AllPacakges";
+import Login from "../Pages/Login/Login";
 
 
 export const router = createBrowserRouter([
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
         {
           path: '/allPackages',
           element: <AllPacakges></AllPacakges>
+        },
+        {
+          path: '/login',
+          element: <Login></Login>
         }
     ]
   },

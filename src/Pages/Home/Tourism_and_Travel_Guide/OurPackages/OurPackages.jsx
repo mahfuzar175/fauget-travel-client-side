@@ -9,7 +9,7 @@ const OurPackages = () => {
   return (
     <div>
       <div className="flex justify-center flex-row items-center">
-      <div className="grid md:grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
         {packages.slice(0, 3).map((item) => (
           <PacakgeCard key={item.id} item={item} />
         ))}
