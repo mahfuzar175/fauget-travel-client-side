@@ -1,12 +1,58 @@
+import Swal from "sweetalert2";
 import useAuth from "../../../../hooks/useAuth";
+import { useLocation, useNavigate } from "react-router-dom";
+import useAxiosSecure from "../../../../hooks/useAxiosSecure";
 
 const PacakgeCard = ({ item }) => {
-  const { tour_image, tour_type, trip_title, price} = item;
-  const {user} = useAuth;
+  const { tour_image, tour_type, trip_title, price, _id} = item;
+  const {user} = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const axiosSecure = useAxiosSecure();
 
   const handleAddtoCart = tour =>{
     console.log(tour);
-  }
+    if(user && user.email){
+      const cartItem = {
+       packageId: _id,
+        email: user.email,
+        tour_type,
+        tour_image,
+        trip_title,
+        price,
+      };
+      axiosSecure.post("/carts", cartItem).then((res) => {
+        console.log(res.data);
+        if (res.data.insertedId) {
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: `${name} added to your cart`,
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          // refetch cart to update the cart items count
+          // refetc();
+        }
+      });
+    }
+    else {
+      Swal.fire({
+        title: "You are not Logged In!",
+        text: "Please login to add to the cart!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Go to Login!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // send the user to the login page
+          navigate("/login", { state: { from: location } });
+        }
+      });
+    }
+  };
 
   return (
     <div>
