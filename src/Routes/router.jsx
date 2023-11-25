@@ -13,6 +13,7 @@ import ContactUs from "../components/ContactUs";
 import AboutUs from "../components/AboutUs";
 import Stories from "../Pages/Home/Tourism_and_Travel_Guide/Stories/Stories";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import StoryDetails from "../Pages/Home/Tourism_and_Travel_Guide/Stories/StoryDetails";
 
 
 export const router = createBrowserRouter([
@@ -42,6 +43,11 @@ export const router = createBrowserRouter([
           element: <Stories></Stories>
         },
         {
+          path: '/storyDetails/:id',
+          element: <StoryDetails></StoryDetails>,
+          loader: () => fetch('story.json')
+        },
+        {
           path: 'aboutUs',
           element: <AboutUs></AboutUs>
         },
@@ -56,6 +62,7 @@ export const router = createBrowserRouter([
         {
           path: '/dashboard',
           element: <Dashboard></Dashboard>
+          
         }
     ]
   },

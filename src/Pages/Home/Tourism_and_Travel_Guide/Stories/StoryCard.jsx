@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const StoryCard = ({ item }) => {
   const { id, spot_name, location, posted_date, tourist_image, tourist_name, journey_review, rating} = item;
   return (
-    <Link to={`/details/${id}`} className="text-decoration-none">
+    <Link to={`/storyDetails/${id}`} className="text-decoration-none">
     <div>
       <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border border-gray-500 text-black">
 	<div className="flex justify-between p-4">

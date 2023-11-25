@@ -2,6 +2,7 @@
     {
       "id": 1,
       "spot_name": "Golden Gate Bridge",
+      "spot_image": "https://i.ibb.co/t4vJXRH/1.webp",
       "location": "San Francisco, USA",
       "posted_date": "3 days ago",
       "tourist_image": "https://i.ibb.co/pfXD4rh/member1.png",
@@ -12,6 +13,7 @@
     {
       "id": 2,
       "spot_name": "Eiffel Tower",
+      "spot_image": "https://i.ibb.co/tb7rhFY/2.jpg",
       "location": "Paris, France",
       "posted_date": "7 days ago",
       "tourist_image": "https://i.ibb.co/BZKTMdD/member2.png",
@@ -22,6 +24,7 @@
     {
       "id": 3,
       "spot_name": "Machu Picchu",
+      "spot_image": "https://i.ibb.co/D5Jkp1L/3.jpg",
       "location": "Cusco, Peru",
       "posted_date": "3 days ago",
       "tourist_image": "https://i.ibb.co/BZKTMdD/member2.png",
@@ -32,6 +35,7 @@
     {
       "id": 4,
       "spot_name": "Great Barrier Reef",
+      "spot_image": "https://i.ibb.co/prCRtsS/4.jpg",
       "location": "Queensland, Australia",
       "posted_date": "11 days ago",
       "tourist_image": "https://i.ibb.co/FDZH1Br/member3.png",
