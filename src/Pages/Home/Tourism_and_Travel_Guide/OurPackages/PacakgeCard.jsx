@@ -1,5 +1,13 @@
+import useAuth from "../../../../hooks/useAuth";
+
 const PacakgeCard = ({ item }) => {
-  const { tour_image, tour_type, trip_title, price, tour_plan} = item;
+  const { tour_image, tour_type, trip_title, price} = item;
+  const {user} = useAuth;
+
+  const handleAddtoCart = tour =>{
+    console.log(tour);
+  }
+
   return (
     <div>
       <div className="relative flex w-full max-w-[26rem] flex-col bg-white bg-clip-border text-gray-700 border">
@@ -9,6 +17,7 @@ const PacakgeCard = ({ item }) => {
           />
           <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
           <button
+          onClick={() => handleAddtoCart(item)}
             className="!absolute top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-dark="true"
@@ -29,7 +38,7 @@ const PacakgeCard = ({ item }) => {
         <div className="p-6">
           <div className="flex items-center justify-between mb-2">
             <h5 className="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
-              {tour_type}
+              Tour Type: {tour_type}
             </h5>
             <p className="flex items-center gap-1.5  font-sans text-base font-bold leading-relaxed text-blue-gray-900 antialiased">
               ${price}

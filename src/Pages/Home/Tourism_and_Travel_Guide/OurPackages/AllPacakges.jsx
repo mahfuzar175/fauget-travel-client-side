@@ -4,7 +4,7 @@ import PacakgeCard from "./PacakgeCard";
 const AllPacakges = () => {
     const [packages] = useTourPackages();
     return (
-        <div className="flex justify-center items-center mt-28">
+        <div className="flex justify-center items-center mt-28 mb-8">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {
                 packages.map(item =><PacakgeCard
