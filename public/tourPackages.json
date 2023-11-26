@@ -8,7 +8,11 @@
     "day1_activity": "Hiking Adventure",
     "day1_description": "Arrive at the destination and check into the hotel.",
     "day2_activity": "River Rafting",
-    "day2_description": "Exciting river rafting experience."
+    "day2_description": "Exciting river rafting experience.",
+    "img1": "https://i.ibb.co/WG3sLZV/omer-salom-E4-VSMAUWg-XU-unsplash.jpg",
+    "img2": "https://i.ibb.co/NSvRFTf/mukuko-studio-t-PKQw-YHy8q4-unsplash.jpg",
+    "img3": "https://i.ibb.co/kQQyVJv/joshua-earle-p2-TQ-3-Bh3-Oo-unsplash.jpg",
+    "img4": "https://i.ibb.co/sy5NG3Z/climbing-1761386.jpg"
   },
   {
     "id": 2,
@@ -19,7 +23,11 @@
     "day1_activity": "Mountain Trekking",
     "day1_description": "Start the day with a challenging mountain trek.",
     "day2_activity": "Canyoning Adventure",
-    "day2_description": "Thrilling canyoning experience in the wilderness."
+    "day2_description": "Thrilling canyoning experience in the wilderness.",
+    "img1": "https://i.ibb.co/WG3sLZV/omer-salom-E4-VSMAUWg-XU-unsplash.jpg",
+    "img2": "https://i.ibb.co/NSvRFTf/mukuko-studio-t-PKQw-YHy8q4-unsplash.jpg",
+    "img3": "https://i.ibb.co/kQQyVJv/joshua-earle-p2-TQ-3-Bh3-Oo-unsplash.jpg",
+    "img4": "https://i.ibb.co/sy5NG3Z/climbing-1761386.jpg"
   },  
   {
     "id": 3,
@@ -30,7 +38,11 @@
     "day1_activity": "Dune Bashing Adventure",
     "day1_description": "Embark on an adrenaline-pumping dune bashing adventure.",
     "day2_activity": "Sandboarding Experience",
-    "day2_description": "Enjoy the thrill of sandboarding on the vast desert dunes."
+    "day2_description": "Enjoy the thrill of sandboarding on the vast desert dunes.",
+    "img1": "https://i.ibb.co/WG3sLZV/omer-salom-E4-VSMAUWg-XU-unsplash.jpg",
+    "img2": "https://i.ibb.co/NSvRFTf/mukuko-studio-t-PKQw-YHy8q4-unsplash.jpg",
+    "img3": "https://i.ibb.co/kQQyVJv/joshua-earle-p2-TQ-3-Bh3-Oo-unsplash.jpg",
+    "img4": "https://i.ibb.co/sy5NG3Z/climbing-1761386.jpg"
   },  
   {
     "id": 4,
@@ -41,7 +53,11 @@
     "day1_activity": "Historical City Tour",
     "day1_description": "Explore the historical landmarks of the city.",
     "day2_activity": "Museum Visits",
-    "day2_description": "Visit local museums and learn about the culture."
+    "day2_description": "Visit local museums and learn about the culture.",
+    "img1": "https://i.ibb.co/T0HtTwj/nandu-menon-h-GHldb-Cg-YDA-unsplash.jpg",
+    "img2": "https://i.ibb.co/jf0b3f9/Peru-Seniors-Travel-optimized.jpg",
+    "img3": "https://i.ibb.co/YTD3c8g/dddddh.jpg",
+    "img4": "https://i.ibb.co/pymxQf1/web-Quandamooka-Dances-QYAC.jpg"
   },
   {
     "id": 5,
@@ -52,7 +68,11 @@
     "day1_activity": "Architectural Wonders Tour",
     "day1_description": "Discover the architectural wonders and historical sites.",
     "day2_activity": "Local Artisan Workshops",
-    "day2_description": "Immerse yourself in the local culture by visiting artisan workshops."
+    "day2_description": "Immerse yourself in the local culture by visiting artisan workshops.",
+    "img1": "https://i.ibb.co/T0HtTwj/nandu-menon-h-GHldb-Cg-YDA-unsplash.jpg",
+    "img2": "https://i.ibb.co/jf0b3f9/Peru-Seniors-Travel-optimized.jpg",
+    "img3": "https://i.ibb.co/YTD3c8g/dddddh.jpg",
+    "img4": "https://i.ibb.co/pymxQf1/web-Quandamooka-Dances-QYAC.jpg"
   },
   {
     "id": 6,
@@ -63,7 +83,11 @@
     "day1_activity": "Relaxation Day at the Beach",
     "day1_description": "Enjoy a leisure day by the sea.",
     "day2_activity": "Water Sports",
-    "day2_description": "Participate in exciting water sports activities."
+    "day2_description": "Participate in exciting water sports activities.",
+    "img1": "https://i.ibb.co/j4kWKRv/1491580692329.jpg",
+    "img2": "https://i.ibb.co/F7HsvNQ/MIA-206-Spring-Break-Sbeach00-NEWPPP.jpg",
+    "img3": "https://i.ibb.co/z4hDK7m/2000x2000-0-70-1d8fbf1859197faac9f2269fc710378e.jpg",
+    "img4": "https://i.ibb.co/Fxp4WjX/parki-beach.jpg"
   },
   {
     "id": 7,
@@ -74,7 +98,11 @@
     "day1_activity": "Beachfront Relaxation",
     "day1_description": "Indulge in a day of pure relaxation by the serene beachfront.",
     "day2_activity": "Snorkeling Adventure",
-    "day2_description": "Embark on a snorkeling adventure to explore the vibrant marine life."
+    "day2_description": "Embark on a snorkeling adventure to explore the vibrant marine life.",
+    "img1": "https://i.ibb.co/j4kWKRv/1491580692329.jpg",
+    "img2": "https://i.ibb.co/F7HsvNQ/MIA-206-Spring-Break-Sbeach00-NEWPPP.jpg",
+    "img3": "https://i.ibb.co/z4hDK7m/2000x2000-0-70-1d8fbf1859197faac9f2269fc710378e.jpg",
+    "img4": "https://i.ibb.co/Fxp4WjX/parki-beach.jpg"
   },
   {
     "id": 8,
@@ -85,7 +113,11 @@
     "day1_activity": "Beach Picnic and Sunset Cruise",
     "day1_description": "Experience a beach picnic followed by a romantic sunset cruise.",
     "day2_activity": "Kayaking Expedition",
-    "day2_description": "Explore the coastal wonders with a thrilling kayaking expedition."
+    "day2_description": "Explore the coastal wonders with a thrilling kayaking expedition.",
+    "img1": "https://i.ibb.co/j4kWKRv/1491580692329.jpg",
+    "img2": "https://i.ibb.co/F7HsvNQ/MIA-206-Spring-Break-Sbeach00-NEWPPP.jpg",
+    "img3": "https://i.ibb.co/z4hDK7m/2000x2000-0-70-1d8fbf1859197faac9f2269fc710378e.jpg",
+    "img4": "https://i.ibb.co/Fxp4WjX/parki-beach.jpg"
   },    
   {
     "id": 9,
@@ -96,7 +128,11 @@
     "day1_activity": "Arrival and Check-in",
     "day1_description": "Arrive at the safari lodge and check-in.",
     "day2_activity": "Game Drives",
-    "day2_description": "Embark on thrilling game drives in the wild."
+    "day2_description": "Embark on thrilling game drives in the wild.",
+    "img1": "https://i.ibb.co/sJzCWnc/2389111-1049898111.jpg",
+    "img2": "https://i.ibb.co/Jrzntj4/The-Cost-of-a-Tanzania-Safarisss-750x450.jpg",
+    "img3": "https://i.ibb.co/xstWgVF/istockphoto-692556208-612x612.jpg",
+    "img4": "https://i.ibb.co/M9yNs9M/Desert-Safaris-Tourism.jpg"
   },
   {
     "id": 10,
@@ -107,7 +143,11 @@
     "day1_activity": "Safari Lodge Welcome",
     "day1_description": "Warm welcome at the safari lodge and check-in to your comfortable accommodation.",
     "day2_activity": "Bush Walk and Bird Watching",
-    "day2_description": "Explore the wilderness on a guided bush walk and indulge in bird watching."
+    "day2_description": "Explore the wilderness on a guided bush walk and indulge in bird watching.",
+    "img1": "https://i.ibb.co/sJzCWnc/2389111-1049898111.jpg",
+    "img2": "https://i.ibb.co/Jrzntj4/The-Cost-of-a-Tanzania-Safarisss-750x450.jpg",
+    "img3": "https://i.ibb.co/xstWgVF/istockphoto-692556208-612x612.jpg",
+    "img4": "https://i.ibb.co/M9yNs9M/Desert-Safaris-Tourism.jpg"
   },  
   {
     "id": 11,
@@ -118,7 +158,12 @@
     "day1_activity": "Arrival and Check-in",
     "day1_description": "Arrive at the wellness resort and check into your peaceful retreat.",
     "day2_activity": "City Landmarks Tour",
-    "day2_description": "Explore iconic landmarks of the city."
+    "day2_description": "Explore iconic landmarks of the city.",
+    "img1": "https://i.ibb.co/6H0Lqr3/pngtree-kunshan-pyramid-real-estate-tour-station-future-city-image-864023.jpg",
+    "img2": "https://i.ibb.co/kqHBHSR/128397b0-57d2-4183-b9fb-bf6a5254d19c.jpg",
+    "img3": "https://i.ibb.co/cbwxgmH/2a.jpg",
+    "img4": "https://i.ibb.co/6ngbkGY/lovepik-phoenix-ancient-city-tourism-picture-501140377.jpg"
+
   },
   {
     "id": 12,
@@ -129,7 +174,11 @@
     "day1_activity": "Hotel Arrival and Relaxation",
     "day1_description": "Arrive at the stylish city hotel and relax in your urban retreat.",
     "day2_activity": "Cultural District Exploration",
-    "day2_description": "Immerse yourself in the cultural richness of the city's vibrant districts."
+    "day2_description": "Immerse yourself in the cultural richness of the city's vibrant districts.",
+    "img1": "https://i.ibb.co/6H0Lqr3/pngtree-kunshan-pyramid-real-estate-tour-station-future-city-image-864023.jpg",
+    "img2": "https://i.ibb.co/kqHBHSR/128397b0-57d2-4183-b9fb-bf6a5254d19c.jpg",
+    "img3": "https://i.ibb.co/cbwxgmH/2a.jpg",
+    "img4": "https://i.ibb.co/6ngbkGY/lovepik-phoenix-ancient-city-tourism-picture-501140377.jpg"
   },
   {
     "id": 13,
@@ -140,7 +189,11 @@
     "day1_activity": "Luxury Hotel Check-in",
     "day1_description": "Check into a luxurious city hotel, setting the tone for your modern urban escape.",
     "day2_activity": "Shopping and Culinary Adventure",
-    "day2_description": "Embark on a shopping spree and indulge in a culinary adventure in the city's vibrant scene."
+    "day2_description": "Embark on a shopping spree and indulge in a culinary adventure in the city's vibrant scene.",
+    "img1": "https://i.ibb.co/6H0Lqr3/pngtree-kunshan-pyramid-real-estate-tour-station-future-city-image-864023.jpg",
+    "img2": "https://i.ibb.co/kqHBHSR/128397b0-57d2-4183-b9fb-bf6a5254d19c.jpg",
+    "img3": "https://i.ibb.co/cbwxgmH/2a.jpg",
+    "img4": "https://i.ibb.co/6ngbkGY/lovepik-phoenix-ancient-city-tourism-picture-501140377.jpg"
   }
   
 ]

@@ -1,11 +1,11 @@
 import Swal from "sweetalert2";
 import useAuth from "../../../../hooks/useAuth";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAxiosSecure from "../../../../hooks/useAxiosSecure";
 import useCart from "../../../../hooks/useCart";
 
 const PacakgeCard = ({ item }) => {
-  const { tour_image, tour_type, trip_title, price, _id} = item;
+  const { id, tour_image, tour_type, trip_title, price, _id} = item;
   const {user} = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -95,12 +95,11 @@ const PacakgeCard = ({ item }) => {
             {trip_title}
           </p>
           <div className="flex justify-center items-center ">
-            <button className="btn btn-primary w-full">View Details</button>
+            <Link to={`/packageDetails/${id}`}> <button className="btn btn-primary w-full">View Details</button></Link>
           </div>
         </div>
       </div>
     </div>
   );
 };
-
 export default PacakgeCard;

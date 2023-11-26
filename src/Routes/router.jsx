@@ -6,7 +6,6 @@ import Home from "../Pages/Home/Home/Home";
 import AllPacakges from "../Pages/Home/Tourism_and_Travel_Guide/OurPackages/AllPacakges";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
-import Secret from "../Pages/Shared/Secret";
 import PrivateRoute from './PrivateRoute';
 import Dashboard from "../Layout/Dashboard";
 import ContactUs from "../components/ContactUs";
@@ -19,6 +18,8 @@ import MyWishlist from "../Pages/Dashboard/My Wishlist/MyWishlist";
 import MyProfile from "../Pages/Dashboard/MyProfile.jsx/MyProfile";
 import ManagesUsers from "../Pages/Dashboard/ManageUsers/ManagesUsers";
 import MyAssignedTours from "../Pages/Dashboard/My Assigned Tours/MyAssignedTours";
+import PackageDetails from "../Pages/Home/Tourism_and_Travel_Guide/OurPackages/PackageDetails/PackageDetails";
+
 
 
 export const router = createBrowserRouter([
@@ -34,6 +35,11 @@ export const router = createBrowserRouter([
         {
           path: '/allPackages',
           element: <AllPacakges></AllPacakges>
+        },
+        {
+          path: '/packageDetails/:id',
+          element: <PackageDetails></PackageDetails>,
+          loader:() => fetch('http://localhost:5000/travelPackages')
         },
         {
           path: '/login',
