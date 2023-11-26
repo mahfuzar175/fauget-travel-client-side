@@ -18,6 +18,7 @@ import Community from "../Pages/Home/Home/Community/Community";
 import MyWishlist from "../Pages/Dashboard/My Wishlist/MyWishlist";
 import MyProfile from "../Pages/Dashboard/MyProfile.jsx/MyProfile";
 import ManagesUsers from "../Pages/Dashboard/ManageUsers/ManagesUsers";
+import MyAssignedTours from "../Pages/Dashboard/My Assigned Tours/MyAssignedTours";
 
 
 export const router = createBrowserRouter([
@@ -62,11 +63,7 @@ export const router = createBrowserRouter([
         {
           path: '/contactUs',
           element: <ContactUs></ContactUs>
-        },
-        {
-          path: '/secret',
-          element: <PrivateRoute><Secret></Secret></PrivateRoute>
-        },
+        }
     ]
   },
   {
@@ -87,6 +84,11 @@ export const router = createBrowserRouter([
       {
         path: 'manageUsers',
         element: <ManagesUsers></ManagesUsers>
+      },
+
+      {
+        path: 'myAssignedTours',
+        element: <MyAssignedTours></MyAssignedTours>
       }
     ]
   }

@@ -33,9 +33,6 @@ const Navbar = () => {
       <li>
         <NavLink to="/contactUs">CONTACT US</NavLink>
       </li>
-      <li>
-        <NavLink to="/secret">Cecret</NavLink>
-      </li>
       {user ? (
         <>
           {/*<li><span>{user?.displayName}</span></li>*/}
