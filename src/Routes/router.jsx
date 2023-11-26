@@ -15,6 +15,7 @@ import Stories from "../Pages/Home/Tourism_and_Travel_Guide/Stories/Stories";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import StoryDetails from "../Pages/Home/Tourism_and_Travel_Guide/Stories/StoryDetails";
 import Community from "../Pages/Home/Home/Community/Community";
+import MyWishlist from "../Pages/Dashboard/My Wishlist/MyWishlist";
 
 
 export const router = createBrowserRouter([
@@ -64,11 +65,17 @@ export const router = createBrowserRouter([
           path: '/secret',
           element: <PrivateRoute><Secret></Secret></PrivateRoute>
         },
-        {
-          path: '/dashboard',
-          element: <Dashboard></Dashboard>
-          
-        }
     ]
   },
+  {
+    path: 'dashboard',
+    element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: 'cart',
+        element: <MyWishlist></MyWishlist>
+      }
+    ]
+  }
 ]);

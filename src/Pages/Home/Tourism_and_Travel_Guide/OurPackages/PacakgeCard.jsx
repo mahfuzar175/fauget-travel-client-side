@@ -2,6 +2,7 @@ import Swal from "sweetalert2";
 import useAuth from "../../../../hooks/useAuth";
 import { useLocation, useNavigate } from "react-router-dom";
 import useAxiosSecure from "../../../../hooks/useAxiosSecure";
+import useCart from "../../../../hooks/useCart";
 
 const PacakgeCard = ({ item }) => {
   const { tour_image, tour_type, trip_title, price, _id} = item;
@@ -9,9 +10,9 @@ const PacakgeCard = ({ item }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const axiosSecure = useAxiosSecure();
+  const [ refetch] = useCart();
 
-  const handleAddtoCart = tour =>{
-    console.log(tour);
+  const handleAddtoCart = () =>{
     if(user && user.email){
       const cartItem = {
        packageId: _id,
@@ -27,12 +28,12 @@ const PacakgeCard = ({ item }) => {
           Swal.fire({
             position: "top-end",
             icon: "success",
-            title: `${name} added to your cart`,
+            title: `${trip_title} is added to your cart!`,
             showConfirmButton: false,
             timer: 1500,
           });
           // refetch cart to update the cart items count
-          // refetc();
+          refetch();
         }
       });
     }
@@ -63,7 +64,7 @@ const PacakgeCard = ({ item }) => {
           />
           <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
           <button
-          onClick={() => handleAddtoCart(item)}
+          onClick={handleAddtoCart}
             className="!absolute top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-dark="true"
