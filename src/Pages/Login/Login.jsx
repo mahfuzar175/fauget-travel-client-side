@@ -4,6 +4,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 import Swal from 'sweetalert2';
 import pic from '../../assets/login/authentication2.png'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import SocialLogin from '../../components/SocialLogin/SocialLogin';
 
 
 const Login = () => {
@@ -106,7 +107,7 @@ const Login = () => {
             <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
           </form>
           <p className='text-center font-medium'><small>New Here? <Link className='text-blue-600' to='/signup'>Create an account!!!</Link></small></p>
-          {/* <SocialLogin></SocialLogin> */}
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ const Dashboard = () => {
         <ul className="menu p-4">
           <li>
             
-            <NavLink to="/dashboard/profile"><FaUser></FaUser> My Profile</NavLink>
+            <NavLink to="/dashboard/myProfile"><FaUser></FaUser> My Profile</NavLink>
           </li>
           <li>
             

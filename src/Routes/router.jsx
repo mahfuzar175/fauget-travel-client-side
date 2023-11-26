@@ -16,6 +16,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import StoryDetails from "../Pages/Home/Tourism_and_Travel_Guide/Stories/StoryDetails";
 import Community from "../Pages/Home/Home/Community/Community";
 import MyWishlist from "../Pages/Dashboard/My Wishlist/MyWishlist";
+import MyProfile from "../Pages/Dashboard/MyProfile.jsx/MyProfile";
 
 
 export const router = createBrowserRouter([
@@ -74,7 +75,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: 'cart',
-        element: <MyWishlist></MyWishlist>
+        element: <PrivateRoute><MyWishlist></MyWishlist></PrivateRoute>
+      },
+      {
+        path: 'myProfile',
+        element: <MyProfile></MyProfile>
       }
     ]
   }
