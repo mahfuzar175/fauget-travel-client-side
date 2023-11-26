@@ -14,6 +14,41 @@ const ManagesUsers = () => {
     })
 
 
+    const handleMakeAdmin = (user) =>{
+        axiosSecure.patch(`/users/admin/${user._id}`)
+        .then(res => {
+            console.log(res.data);
+            if(res.data.modifiedCount > 0){
+                refetch();
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: `${user.name} is an Admin Now!`,
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+            }
+        })
+    }
+
+    const handleMaketTourGuide = (user) =>{
+        axiosSecure.patch(`/users/tourGuide/${user._id}`)
+        .then(res => {
+            console.log(res.data);
+            if(res.data.modifiedCount > 0){
+                refetch();
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: `${user.name} is an Tour Guide Now!`,
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+            }
+        })
+    }
+
+
 
     const handleDeletedUser = (user) => {
         Swal.fire({
@@ -54,7 +89,8 @@ const ManagesUsers = () => {
               <th>#</th>
               <th>NAME</th>
               <th>EMAIL</th>
-              <th>ROLE</th>
+              <th>MAKE ADMIN</th>
+              <th>MAKE TOUR GUIDE</th>
               <th>ACTION</th>
             </tr>
           </thead>
@@ -71,6 +107,14 @@ const ManagesUsers = () => {
                 <th>
                 { user.role === 'admin' ? "Admin" : <button
                     onClick={() => handleMakeAdmin(user)}
+                    className="btn btn-lg text-white bg-[#D1A054] hover:text-black"
+                  >
+                    <FaUsers></FaUsers>{" "}
+                  </button>}
+                </th>
+                <th>
+                { user.role === 'tourGuide' ? "Tour Guide" : <button
+                    onClick={() => handleMaketTourGuide(user)}
                     className="btn btn-lg text-white bg-[#D1A054] hover:text-black"
                   >
                     <FaUsers></FaUsers>{" "}
