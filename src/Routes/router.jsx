@@ -17,6 +17,7 @@ import StoryDetails from "../Pages/Home/Tourism_and_Travel_Guide/Stories/StoryDe
 import Community from "../Pages/Home/Home/Community/Community";
 import MyWishlist from "../Pages/Dashboard/My Wishlist/MyWishlist";
 import MyProfile from "../Pages/Dashboard/MyProfile.jsx/MyProfile";
+import ManagesUsers from "../Pages/Dashboard/ManageUsers/ManagesUsers";
 
 
 export const router = createBrowserRouter([
@@ -80,6 +81,12 @@ export const router = createBrowserRouter([
       {
         path: 'myProfile',
         element: <MyProfile></MyProfile>
+      },
+
+      // admin routes
+      {
+        path: 'manageUsers',
+        element: <ManagesUsers></ManagesUsers>
       }
     ]
   }

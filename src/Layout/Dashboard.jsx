@@ -1,24 +1,36 @@
-import { FaBook, FaHome, FaMailBulk, FaSearch, FaShopify, FaShoppingCart, FaUser } from "react-icons/fa";
+import { FaBook, FaHome, FaMailBulk, FaSearch, FaShopify, FaShoppingCart, FaUser, FaUsers, FaUtensils } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
+    const isAdmin = true;
+
   return (
     <div className="flex">
       <div className="w-64 min-h-screen bg-[#D1A054]">
         <h2 className="text-center font-bold text-lg font-serif underline mt-4">Dashboard</h2>
         <ul className="menu p-4">
-          <li>
-            
+        <li>
             <NavLink to="/dashboard/myProfile"><FaUser></FaUser> My Profile</NavLink>
           </li>
+          {
+            isAdmin ? <>
+            <li>
+            <NavLink to="/dashboard/bookings"><FaUtensils></FaUtensils> Add Package</NavLink>
+          </li>
           <li>
-            
+            <NavLink to="/dashboard/manageUsers"><FaUsers></FaUsers> Manage Users</NavLink>
+          </li>
+            </>
+            :
+            <>
+          <li>
             <NavLink to="/dashboard/bookings"><FaBook></FaBook> My Bookings</NavLink>
           </li>
           <li>
-            
             <NavLink to="/dashboard/cart"><FaShoppingCart></FaShoppingCart> My Wishlist</NavLink>
           </li>
+            </>
+          }
           
         {/* shared nav links */}
           <div className="divider"></div>
