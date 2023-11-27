@@ -12,11 +12,11 @@ const Dashboard = () => {
       <div className="w-64 min-h-screen bg-[#D1A054] ">
         <h2 className="text-center font-bold text-lg font-serif underline mt-4">Dashboard</h2>
         <ul className="menu p-4">
-        <li>
-            <NavLink to="/dashboard/myProfile"><FaUser></FaUser> My Profile</NavLink>
-          </li>
           {
             isAdmin ? <>
+            <li>
+            <NavLink to="/dashboard/adminProfile"><FaUser></FaUser> My Profile</NavLink>
+          </li>
             <li>
             <NavLink to="/dashboard/bookings"><FaUtensils></FaUtensils> Add Package</NavLink>
           </li>
@@ -27,11 +27,17 @@ const Dashboard = () => {
             :
             isTourGuide?<>
              <li>
+            <NavLink to="/dashboard/tourGuideProfile"><FaUser></FaUser> My Profile</NavLink>
+          </li>
+             <li>
             <NavLink to="/dashboard/myAssignedTours"><FaBook></FaBook> My Assigned Tours</NavLink>
           </li>
             </>
             :
             <>
+          <li>
+            <NavLink to="/dashboard/touristProfile"><FaUser></FaUser> My Profile</NavLink>
+          </li>
           <li>
             <NavLink to="/dashboard/bookings"><FaBook></FaBook> My Bookings</NavLink>
           </li>

@@ -5,7 +5,7 @@ import useAxiosSecure from "./useAxiosSecure";
 const useTourGuide = () => {
     const {user, loading} = useAuth();
     const axiosSecure = useAxiosSecure();
-    const {data: isTourGuide, isPending: isAdminLoading} = useQuery({
+    const {data: isTourGuide, isPending: isTourGuideLoading} = useQuery({
         queryKey: [user?.email, 'isTourGuide'],
         enabled: !loading,
         queryFn: async () =>{
@@ -14,7 +14,7 @@ const useTourGuide = () => {
             return res.data?.tourGuide;
         }
     })
-    return [isTourGuide, isAdminLoading]
+    return [isTourGuide, isTourGuideLoading]
 };
 
 export default useTourGuide;
