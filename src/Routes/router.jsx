@@ -46,7 +46,7 @@ export const router = createBrowserRouter([
         },
         {
           path: '/packageDetails/:id',
-          element: <PackageDetails></PackageDetails>,
+          element: <PrivateRoute><PackageDetails></PackageDetails></PrivateRoute>,
           loader:() => fetch('http://localhost:5000/travelPackages')
         },
         {
