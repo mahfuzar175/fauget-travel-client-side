@@ -1,12 +1,16 @@
 import useAuth from "../../../hooks/useAuth";
-
+import userDefaultPic from '../../../assets/login/user.png'
 const AdminProfile = () => {
     const {user} = useAuth();
     const userName = user ? user.displayName : "";
     const userProfilePic = user ? user.photoURL : userDefaultPic;
     const userEmail = user ? user.email : "";
   return (
-    <div className="flex justify-center items-center">
+    <div>
+      <div className="my-4 p-4 w-full bg-green-600 text-white border border-black rounded">
+        <h2 className="text-center text-xl font-serif font-semibold">Profile</h2>
+      </div>
+      <div className="flex justify-center items-center">
       <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 border dark:bg-gray-900 dark:text-gray-100">
         <img
           src={userProfilePic}
@@ -81,6 +85,7 @@ const AdminProfile = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

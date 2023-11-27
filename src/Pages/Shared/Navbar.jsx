@@ -102,7 +102,7 @@ const Navbar = () => {
             {userName}
           </a>
         </li>
-        <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink to="/dashboard/dashboardCover">Dashboard</NavLink></li>
         {user ? (
         <>
           {/*<li><span>{user?.displayName}</span></li>*/}

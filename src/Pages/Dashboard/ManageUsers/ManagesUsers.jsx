@@ -4,79 +4,77 @@ import { FaTrash, FaUsers } from "react-icons/fa";
 import Swal from "sweetalert2";
 
 const ManagesUsers = () => {
-    const axiosSecure = useAxiosSecure();
-    const {data: users = [], refetch} = useQuery({
-        queryKey: ['users'],
-        queryFn: async () =>{
-            const res = await axiosSecure.get('/users');
-            return res.data;
-        }
-    })
+  const axiosSecure = useAxiosSecure();
+  const { data: users = [], refetch } = useQuery({
+    queryKey: ["users"],
+    queryFn: async () => {
+      const res = await axiosSecure.get("/users");
+      return res.data;
+    },
+  });
 
-
-    const handleMakeAdmin = (user) =>{
-        axiosSecure.patch(`/users/admin/${user._id}`)
-        .then(res => {
-            console.log(res.data);
-            if(res.data.modifiedCount > 0){
-                refetch();
-                Swal.fire({
-                    position: "top-center",
-                    icon: "success",
-                    title: `${user.name} is an Admin Now!`,
-                    showConfirmButton: false,
-                    timer: 1500
-                  });
-            }
-        })
-    }
-
-    const handleMaketTourGuide = (user) =>{
-        axiosSecure.patch(`/users/tourGuide/${user._id}`)
-        .then(res => {
-            console.log(res.data);
-            if(res.data.modifiedCount > 0){
-                refetch();
-                Swal.fire({
-                    position: "top-center",
-                    icon: "success",
-                    title: `${user.name} is an Tour Guide Now!`,
-                    showConfirmButton: false,
-                    timer: 1500
-                  });
-            }
-        })
-    }
-
-
-
-    const handleDeletedUser = (user) => {
+  const handleMakeAdmin = (user) => {
+    axiosSecure.patch(`/users/admin/${user._id}`).then((res) => {
+      console.log(res.data);
+      if (res.data.modifiedCount > 0) {
+        refetch();
         Swal.fire({
-          title: "Are you sure?",
-          text: "You won't be able to revert this!",
-          icon: "warning",
-          showCancelButton: true,
-          confirmButtonColor: "#3085d6",
-          cancelButtonColor: "#d33",
-          confirmButtonText: "Yes, delete it!",
-        }).then((result) => {
-          if (result.isConfirmed) {
-            axiosSecure.delete(`/users/${user._id}`).then((res) => {
-              if (res.data.deletedCount > 0) {
-                refetch();
-                Swal.fire({
-                  title: "Deleted!",
-                  text: "Your file has been deleted.",
-                  icon: "success",
-                });
-              }
+          position: "top-center",
+          icon: "success",
+          title: `${user.name} is an Admin Now!`,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+    });
+  };
+
+  const handleMaketTourGuide = (user) => {
+    axiosSecure.patch(`/users/tourGuide/${user._id}`).then((res) => {
+      console.log(res.data);
+      if (res.data.modifiedCount > 0) {
+        refetch();
+        Swal.fire({
+          position: "top-center",
+          icon: "success",
+          title: `${user.name} is a Tour Guide Now!`,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+    });
+  };
+
+  const handleDeletedUser = (user) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        axiosSecure.delete(`/users/${user._id}`).then((res) => {
+          if (res.data.deletedCount > 0) {
+            refetch();
+            Swal.fire({
+              title: "Deleted!",
+              text: "Your file has been deleted.",
+              icon: "success",
             });
           }
         });
-      };
+      }
+    });
+  };
 
   return (
     <div>
+      <div className="my-4 p-4 w-full bg-green-600 text-white border border-black rounded">
+        <h2 className="text-center text-xl font-serif font-semibold">Manage Users</h2>
+      </div>
       <div className="flex justify-evenly my-4">
         <h2 className="text-3xl">All Users</h2>
         <h2 className="text-3xl">Total Users: {users.length}</h2>
@@ -105,20 +103,28 @@ const ManagesUsers = () => {
                   <h2>{user.email}</h2>
                 </td>
                 <th>
-                { user.role === 'admin' ? "Admin" : <button
-                    onClick={() => handleMakeAdmin(user)}
-                    className="btn btn-lg text-white bg-[#D1A054] hover:text-black"
-                  >
-                    <FaUsers></FaUsers>{" "}
-                  </button>}
+                  {user.role === "admin" ? (
+                    "Admin"
+                  ) : (
+                    <button
+                      onClick={() => handleMakeAdmin(user)}
+                      className="btn btn-lg text-white bg-[#D1A054] hover:text-black"
+                    >
+                      <FaUsers></FaUsers>{" "}
+                    </button>
+                  )}
                 </th>
                 <th>
-                { user.role === 'tourGuide' ? "Tour Guide" : <button
-                    onClick={() => handleMaketTourGuide(user)}
-                    className="btn btn-lg text-white bg-[#D1A054] hover:text-black"
-                  >
-                    <FaUsers></FaUsers>{" "}
-                  </button>}
+                  {user.role === "tourGuide" ? (
+                    "Tour Guide"
+                  ) : (
+                    <button
+                      onClick={() => handleMaketTourGuide(user)}
+                      className="btn btn-lg text-white bg-[#D1A054] hover:text-black"
+                    >
+                      <FaUsers></FaUsers>{" "}
+                    </button>
+                  )}
                 </th>
                 <th>
                   <button

@@ -21,6 +21,10 @@ import PackageDetails from "../Pages/Home/Tourism_and_Travel_Guide/OurPackages/P
 import AdminProfile from "../Pages/Dashboard/AdminProfile/AdminProfile";
 import TourGuideProfile from "../Pages/Dashboard/TourGuideProfile/TourGuideProfile";
 import TouristProfile from "../Pages/Dashboard/TouristProfile/TouristProfile";
+import AddItems from "../Pages/Dashboard/AddItems/AddItems";
+import AdminRoute from "./AdminRoute";
+import TourGuideRoute from "./TourGuideRoute";
+import DashBoardCover from "../Pages/Dashboard/DashBoardCover";
 
 
 
@@ -79,37 +83,43 @@ export const router = createBrowserRouter([
     element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
+      {
+        path: 'dashboardCover',
+        element: <DashBoardCover></DashBoardCover>
+      },
 
       // admin routes
       {
         path: 'adminProfile',
-        element: <AdminProfile></AdminProfile>
+        element: <AdminRoute><AdminProfile></AdminProfile></AdminRoute>
+      },
+      {
+        path: 'addItems',
+        element: <AdminRoute><AddItems></AddItems></AdminRoute>
       },
       {
         path: 'manageUsers',
-        element: <ManagesUsers></ManagesUsers>
+        element: <AdminRoute><ManagesUsers></ManagesUsers></AdminRoute>
       },
-
-      {
-        path: 'myAssignedTours',
-        element: <MyAssignedTours></MyAssignedTours>
-      },
-
 
       // Tour Guide Routes
       {
         path: 'tourGuideProfile',
-        element: <TourGuideProfile></TourGuideProfile>
+        element: <TourGuideRoute><TourGuideProfile></TourGuideProfile></TourGuideRoute>
       },
       {
         path: 'cart',
-        element: <PrivateRoute><MyWishlist></MyWishlist></PrivateRoute>
+        element: <TourGuideRoute><MyWishlist></MyWishlist></TourGuideRoute>
       },
 
       // normal user
       {
+        path: 'myAssignedTours',
+        element: <PrivateRoute><MyAssignedTours></MyAssignedTours></PrivateRoute>
+      },
+      {
         path: 'touristProfile',
-        element: <TouristProfile></TouristProfile>
+        element: <PrivateRoute><TouristProfile></TouristProfile></PrivateRoute>
       }
     ]
   }

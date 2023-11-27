@@ -1,5 +1,5 @@
 import useAuth from "../../../hooks/useAuth";
-
+import userDefaultPic from '../../../assets/login/user.png'
 const TourGuideProfile = () => {
     const {user} = useAuth();
     const userName = user ? user.displayName : "";

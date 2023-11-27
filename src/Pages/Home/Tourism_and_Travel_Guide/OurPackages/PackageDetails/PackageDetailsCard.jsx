@@ -12,7 +12,6 @@ const PackageDetailsCard = ({ item }) => {
     img4,
     day1_activity,
     day2_activity,
-    day3_activity,
   } = item || {};
   console.log(item);
   return (

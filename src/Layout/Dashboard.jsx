@@ -1,4 +1,5 @@
-import { FaBook, FaHome, FaMailBulk, FaSearch, FaShopify, FaShoppingCart, FaUser, FaUsers, FaUtensils } from "react-icons/fa";
+import { FaBook, FaHome, FaSearch, FaShoppingCart, FaUser, FaUsers, FaUtensils } from "react-icons/fa";
+import { FcHome } from "react-icons/fc";
 import { NavLink, Outlet } from "react-router-dom";
 import useAdmin from "../hooks/useAdmin";
 import useTourGuide from "../hooks/useTourGuide";
@@ -12,13 +13,18 @@ const Dashboard = () => {
       <div className="w-64 min-h-screen bg-[#D1A054] ">
         <h2 className="text-center font-bold text-lg font-serif underline mt-4">Dashboard</h2>
         <ul className="menu p-4">
+        <li>
+            <NavLink to="/dashboard/dashboardCover">
+              <FcHome></FcHome> Dashboard
+            </NavLink>
+          </li>
           {
             isAdmin ? <>
             <li>
             <NavLink to="/dashboard/adminProfile"><FaUser></FaUser> My Profile</NavLink>
           </li>
             <li>
-            <NavLink to="/dashboard/bookings"><FaUtensils></FaUtensils> Add Package</NavLink>
+            <NavLink to="/dashboard/addItems"><FaUtensils></FaUtensils> Add Package</NavLink>
           </li>
           <li>
             <NavLink to="/dashboard/manageUsers"><FaUsers></FaUsers> Manage Users</NavLink>
@@ -51,22 +57,12 @@ const Dashboard = () => {
           <div className="divider"></div>
           <li>
             <NavLink to="/">
-              <FaHome></FaHome>HOME
+              <FaHome></FaHome> HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/menu">
-              <FaSearch></FaSearch>MENU
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/order/salad">
-              <FaShopify></FaShopify>SHOP
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">
-              <FaMailBulk></FaMailBulk> CONTATC
+            <NavLink to="/allPackages">
+              <FaSearch></FaSearch> PACKAGES
             </NavLink>
           </li>
         </ul>

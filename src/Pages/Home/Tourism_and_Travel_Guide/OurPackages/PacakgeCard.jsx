@@ -95,7 +95,7 @@ const PacakgeCard = ({ item }) => {
             {trip_title}
           </p>
           <div className="flex justify-center items-center ">
-            <Link to={`/packageDetails/${id}`}> <button className="btn btn-primary w-full">View Details</button></Link>
+            <Link to={`/packageDetails/${_id}`}> <button className="btn btn-primary w-full">View Details</button></Link>
           </div>
         </div>
       </div>

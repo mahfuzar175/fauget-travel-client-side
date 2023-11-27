@@ -8,7 +8,7 @@ const PackageDetails = () => {
     const tourPacakge = useLoaderData();
 
     useEffect(() => {
-        const findItem = tourPacakge?.find((item) => item.id == id);
+        const findItem = tourPacakge?.find((item) => item._id == id);
         setitem(findItem);
       }, [id, tourPacakge]);
     //   console.log(item);
