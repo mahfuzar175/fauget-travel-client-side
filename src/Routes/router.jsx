@@ -26,6 +26,7 @@ import AdminRoute from "./AdminRoute";
 import TourGuideRoute from "./TourGuideRoute";
 import DashBoardCover from "../Pages/Dashboard/DashBoardCover";
 import AllStory from "../Pages/Home/Tourism_and_Travel_Guide/Stories/AllStory";
+import MyBookings from "../Pages/Dashboard/MyBookings/MyBookings";
 
 
 
@@ -125,7 +126,11 @@ export const router = createBrowserRouter([
       },
       {
         path: 'cart',
-        element: <MyWishlist></MyWishlist>
+        element: <PrivateRoute><MyWishlist></MyWishlist></PrivateRoute>
+      },
+      {
+        path: 'myBookings',
+        element: <PrivateRoute><MyBookings></MyBookings></PrivateRoute>
       }
     ]
   }

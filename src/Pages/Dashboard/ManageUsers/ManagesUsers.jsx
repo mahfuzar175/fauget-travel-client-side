@@ -72,9 +72,8 @@ const ManagesUsers = () => {
 
   return (
     <div>
-      <div className="my-4 p-4 w-full bg-green-600 text-white border border-black rounded">
-        <h2 className="text-center text-xl font-serif font-semibold">Manage Users</h2>
-      </div>
+      <h2 className="text-3xl font-semibold text-center underline">MANAGE USERS</h2>
+      
       <div className="flex justify-evenly my-4">
         <h2 className="text-3xl">All Users</h2>
         <h2 className="text-3xl">Total Users: {users.length}</h2>

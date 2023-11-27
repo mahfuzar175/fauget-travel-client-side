@@ -6,7 +6,6 @@ import { Link} from "react-router-dom";
 
 const MyWishlist = () => {
   const [cart, refetch] = useCart();
-  const totalPrice = cart.reduce((total, item) => total + item.price, 0);
   const axiosSecure = useAxiosSecure();
 
   const handleDeletedCart = (id) => {
@@ -37,8 +36,7 @@ const MyWishlist = () => {
   return (
     <div>
       <div className="flex justify-around mb-4">
-        <h2 className="text-3xl font-semibold">TOTAL ITEMS: {cart.length}</h2>
-        <h2 className="text-3xl font-semibold">TOTAL PRICE: {totalPrice}</h2>
+        <h2 className="text-3xl font-semibold">WISH LIST ITEMS</h2>
       </div>
       <div className="overflow-x-auto">
         <table className="table w-full ">

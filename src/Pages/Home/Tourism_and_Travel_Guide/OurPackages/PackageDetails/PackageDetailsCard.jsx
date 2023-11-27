@@ -6,6 +6,7 @@ import useAuth from "../../../../../hooks/useAuth";
 import Swal from "sweetalert2";
 import axios from "axios";
 import useAxiosSecure from "../../../../../hooks/useAxiosSecure";
+import useBookings from "../../../../../hooks/useBookings";
 
 const PackageDetailsCard = ({ item }) => {
   const [tourGuides, setTourGuides] = useState([]);
@@ -15,7 +16,8 @@ const PackageDetailsCard = ({ item }) => {
   const userName =  user.displayName;
   const userProfilePic = user.photoURL;
   const userEmail = user.email;
-  const axiosSecure = useAxiosSecure()
+  const axiosSecure = useAxiosSecure();
+  const [refetch] = useBookings();
   
 
   useEffect(() => {
@@ -51,6 +53,7 @@ const PackageDetailsCard = ({ item }) => {
     const price = form.price.value;
     const date = form.date.value;
     const tourGuide = form.tourGuide.value;
+    const trip_title = form.trip_title.value;
 
     if(user && user.email){
       const newbooking = {
@@ -60,7 +63,8 @@ const PackageDetailsCard = ({ item }) => {
         tourist_image,
         price,
         date,
-        tourGuide
+        tourGuide,
+        trip_title
   
       };
       axiosSecure.post('/bookings', newbooking)
@@ -74,6 +78,7 @@ const PackageDetailsCard = ({ item }) => {
             showConfirmButton: false,
             timer: 1500,
           });
+          refetch();
         }
       })
     }
@@ -242,6 +247,24 @@ const PackageDetailsCard = ({ item }) => {
           <div className="bg-gray-200 p-8">
             <h2 className="flex justify-center items-center text-4xl font-extrabold mb-4">Booking</h2>
             <form onSubmit={handleBooking}>
+              <div className="mb-6 gap-4">
+                <div className="form-control w-full">
+                  <label className="label">
+                    <span className="label-text">Tourist Image</span>
+                  </label>
+                  <label className="input-group">
+                    <input
+                      type="text"
+                      name="tourist_image"
+                      readOnly
+                      defaultValue={userProfilePic}
+                      required
+                      placeholder="Tourist Image"
+                      className="input input-bordered w-full"
+                    />
+                  </label>
+                </div>
+              </div>
               <div className="md:flex mb-6 gap-4">
                 <div className="form-control md:w-1/2">
                   <label className="label">
@@ -280,14 +303,14 @@ const PackageDetailsCard = ({ item }) => {
               <div className="md:flex mb-6 gap-4">
                 <div className="form-control md:w-1/2">
                   <label className="label">
-                    <span className="label-text">Tourist Image</span>
+                    <span className="label-text">Trip Title</span>
                   </label>
                   <label className="input-group">
                     <input
                       type="text"
-                      name="tourist_image"
+                      name="trip_title"
+                      defaultValue={trip_title}
                       readOnly
-                      defaultValue={userProfilePic}
                       required
                       placeholder="Tourist Image"
                       className="input input-bordered w-full"

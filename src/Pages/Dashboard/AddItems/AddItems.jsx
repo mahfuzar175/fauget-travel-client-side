@@ -58,14 +58,10 @@ const AddItems = () => {
 
   return (
     <div>
-      <div className="my-4 p-4 w-full bg-green-600 text-white border border-black rounded">
-        <h2 className="text-center text-xl font-serif font-semibold">
-          Add Packages
-        </h2>
-      </div>
       <div>
         {/* form */}
         <div className="bg-gray-200 p-8">
+        <h2 className="flex justify-center items-center text-4xl font-extrabold mb-4 underline">Add Package</h2>
           <form onSubmit={handleAddPackage}>
             <div className="md:flex mb-6 gap-4">
               <div className="form-control md:w-1/2">

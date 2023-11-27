@@ -45,7 +45,7 @@ const Dashboard = () => {
             <NavLink to="/dashboard/touristProfile"><FaUser></FaUser> My Profile</NavLink>
           </li>
           <li>
-            <NavLink to="/dashboard/bookings"><FaBook></FaBook> My Bookings</NavLink>
+            <NavLink to="/dashboard/myBookings"><FaBook></FaBook> My Bookings</NavLink>
           </li>
           <li>
             <NavLink to="/dashboard/cart"><FaShoppingCart></FaShoppingCart> My Wishlist</NavLink>
