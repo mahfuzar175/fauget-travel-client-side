@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useStory from "../../../../hooks/useStory";
 import StoryCard from "./StoryCard";
 
@@ -11,10 +12,17 @@ const Stories = () => {
 		</div>
       <div className="flex justify-center flex-row items-center p-4">
         <div className="grid md:grid-cols-2 gap-4">
-          {story.map((item) => (
+          {story.slice(0, 4).map((item) => (
             <StoryCard key={item.id} item={item} />
           ))}
         </div>
+      </div>
+      <div className="mt-4 flex justify-center items-center">
+        <Link to="/allStory">
+          <button className="btn btn-primary bg-green-600 hover:bg-green-500 border-none text-white px-4 py-2 rounded-lg">
+            All Stories
+          </button>
+        </Link>
       </div>
     </div>
   );

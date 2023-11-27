@@ -8,7 +8,7 @@
       "tourist_image": "https://i.ibb.co/pfXD4rh/member1.png",
       "tourist_name": "Alex",
       "journey_review": "Explored the Golden Gate Park nearby and then walked across the bridge. The architecture atmosphere is so calming.",
-      "rating": 4
+      "rating": "4"
     },
     {
       "id": 2,
@@ -19,7 +19,7 @@
       "tourist_image": "https://i.ibb.co/BZKTMdD/member2.png",
       "tourist_name": "Sophie",
       "journey_review": "Visited the Eiffel Tower at night when it was all lit up. It was a magical experience. The cityscape from the top is breathtaking!",
-      "rating": 5
+      "rating": "5"
     },
     {
       "id": 3,
@@ -30,7 +30,7 @@
       "tourist_image": "https://i.ibb.co/BZKTMdD/member2.png",
       "tourist_name": "Isabella",
       "journey_review": "Explored the history of the Incas and marveled at the precision of the stone architecture. Machu Picchu is a true wonder!",
-      "rating": 4
+      "rating": "4"
     },
     {
       "id": 4,
@@ -41,7 +41,7 @@
       "tourist_image": "https://i.ibb.co/FDZH1Br/member3.png",
       "tourist_name": "Oliver",
       "journey_review": "Snorkeled at the Great Barrier Reef and witnessed the vibrant coral and diverse marine life. A dream come true for any nature lover!",
-      "rating": 5
+      "rating": "5"
     }
   ]
   

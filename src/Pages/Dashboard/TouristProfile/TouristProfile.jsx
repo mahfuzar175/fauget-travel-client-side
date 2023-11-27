@@ -1,12 +1,14 @@
 import useAuth from "../../../hooks/useAuth";
 import userDefaultPic from '../../../assets/login/user.png'
+import AddStory from "../AddStory/AddStory";
 const TouristProfile = () => {
     const {user} = useAuth();
     const userName = user ? user.displayName : "";
     const userProfilePic = user ? user.photoURL : userDefaultPic;
     const userEmail = user ? user.email : "";
   return (
-    <div className="flex justify-center items-center">
+    <div>
+      <div className="flex justify-center items-center">
       <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 border dark:bg-gray-900 dark:text-gray-100">
         <img
           src={userProfilePic}
@@ -81,6 +83,8 @@ const TouristProfile = () => {
           </div>
         </div>
       </div>
+    </div>
+    <AddStory></AddStory>
     </div>
   );
 };

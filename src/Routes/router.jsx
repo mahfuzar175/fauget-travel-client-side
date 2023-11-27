@@ -25,6 +25,7 @@ import AddItems from "../Pages/Dashboard/AddItems/AddItems";
 import AdminRoute from "./AdminRoute";
 import TourGuideRoute from "./TourGuideRoute";
 import DashBoardCover from "../Pages/Dashboard/DashBoardCover";
+import AllStory from "../Pages/Home/Tourism_and_Travel_Guide/Stories/AllStory";
 
 
 
@@ -59,6 +60,10 @@ export const router = createBrowserRouter([
         {
           path: '/story',
           element: <Stories></Stories>
+        },
+        {
+          path: '/allStory',
+          element: <AllStory></AllStory>
         },
         {
           path: '/storyDetails/:id',

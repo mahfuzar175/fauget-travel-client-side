@@ -56,12 +56,13 @@ const AddItems = () => {
       <div className="md:flex mb-6 gap-4">
       <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Tour Type</span>
+              <span className="label-text">Tour Type*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
                 name="tour_type"
+                required
                 placeholder="Tour Type"
                 className="input input-bordered w-full"
               />
@@ -69,12 +70,13 @@ const AddItems = () => {
           </div>
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Tour Image</span>
+              <span className="label-text">Tour Image*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
                 name="tour_image"
+                required
                 placeholder="Photo URL"
                 className="input input-bordered w-full"
               />
@@ -85,12 +87,13 @@ const AddItems = () => {
         <div className="md:flex mb-6 gap-4">
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Trip Title</span>
+              <span className="label-text">Trip Title*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
                 name="trip_title"
+                required
                 placeholder="Trip Title"
                 className="input input-bordered w-full"
               />
@@ -98,12 +101,13 @@ const AddItems = () => {
           </div>
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Price</span>
+              <span className="label-text">Price*</span>
             </label>
             <label className="input-group">
               <input
                 type="number"
                 name="price"
+                required
                 placeholder="Price"
                 className="input input-bordered w-full"
               />
@@ -114,11 +118,12 @@ const AddItems = () => {
         <div className="md:flex mb-6 gap-4">
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Day-1 Activity</span>
+              <span className="label-text">Day-1 Activity*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
+                required
                 name="day1_activity"
                 placeholder="Day-1 Activity"
                 className="input input-bordered w-full"
@@ -127,12 +132,13 @@ const AddItems = () => {
           </div>
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Day-1 Description</span>
+              <span className="label-text">Day-1 Description*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
                 name="day1_description"
+                required
                 placeholder="Day-1 Description"
                 className="input input-bordered w-full"
               />
@@ -142,12 +148,13 @@ const AddItems = () => {
         <div className="md:flex mb-6 gap-4">
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Day-2 Activity</span>
+              <span className="label-text">Day-2 Activity*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
                 name="day2_activity"
+                required
                 placeholder="Day-2 Activity"
                 className="input input-bordered w-full"
               />
@@ -155,12 +162,13 @@ const AddItems = () => {
           </div>
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Day-2 Description</span>
+              <span className="label-text">Day-2 Description*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
                 name="day2_description"
+                required
                 placeholder="Day-2 Description"
                 className="input input-bordered w-full"
               />
@@ -171,11 +179,12 @@ const AddItems = () => {
         <div className="md:flex mb-6 gap-4">
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Image-1</span>
+              <span className="label-text">Image-1*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
+                required
                 name="img1"
                 placeholder="Image URL-1"
                 className="input input-bordered w-full"
@@ -184,11 +193,12 @@ const AddItems = () => {
           </div>
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Image-2</span>
+              <span className="label-text">Image-2*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
+                required
                 name="img2"
                 placeholder="Image URL-2"
                 className="input input-bordered w-full"
@@ -199,12 +209,13 @@ const AddItems = () => {
         <div className="md:flex mb-6 gap-4">
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Image-3</span>
+              <span className="label-text">Image-3*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
                 name="img3"
+                required
                 placeholder="Image URL-3"
                 className="input input-bordered w-full"
               />
@@ -212,11 +223,12 @@ const AddItems = () => {
           </div>
           <div className="form-control md:w-1/2">
             <label className="label">
-              <span className="label-text">Image-4</span>
+              <span className="label-text">Image-4*</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
+                required
                 name="img4"
                 placeholder="Image URL-4"
                 className="input input-bordered w-full"
