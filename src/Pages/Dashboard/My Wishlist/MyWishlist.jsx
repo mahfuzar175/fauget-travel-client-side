@@ -2,48 +2,46 @@ import Swal from "sweetalert2";
 import useCart from "../../../hooks/useCart";
 import { FaSearchPlus, FaTrash } from "react-icons/fa";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { Link} from "react-router-dom";
 
 const MyWishlist = () => {
-    const [cart, refetch] = useCart();
-    const totalPrice = cart.reduce((total, item) => total + item.price, 0);
-    const axiousSecure = useAxiosSecure();
-   
+  const [cart, refetch] = useCart();
+  const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+  const axiosSecure = useAxiosSecure();
 
-
-    const handleDeletedCart = (id) => {
-        Swal.fire({
-          title: "Are you sure?",
-          text: "You won't be able to revert this!",
-          icon: "warning",
-          showCancelButton: true,
-          confirmButtonColor: "#3085d6",
-          cancelButtonColor: "#d33",
-          confirmButtonText: "Yes, delete it!",
-        }).then((result) => {
-          if (result.isConfirmed) {
-            axiousSecure.delete(`/carts/${id}`).then((res) => {
-              if (res.data.deletedCount > 0) {
-                refetch();
-                Swal.fire({
-                  title: "Deleted!",
-                  text: "Your Item has been deleted.",
-                  icon: "success",
-                });
-              }
+  const handleDeletedCart = (id) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        axiosSecure.delete(`/carts/${id}`).then((res) => {
+          if (res.data.deletedCount > 0) {
+            refetch();
+            Swal.fire({
+              title: "Deleted!",
+              text: "Your Item has been deleted.",
+              icon: "success",
             });
           }
         });
-      };
+      }
+    });
+  };
 
-    return (
-        <div>
+  return (
+    <div>
       <div className="flex justify-around mb-4">
         <h2 className="text-3xl font-semibold">TOTAL ITEMS: {cart.length}</h2>
         <h2 className="text-3xl font-semibold">TOTAL PRICE: {totalPrice}</h2>
       </div>
       <div className="overflow-x-auto">
         <table className="table w-full ">
-          {/* head */}
           <thead className="bg-[#D1A054] text-white">
             <tr>
               <th>#</th>
@@ -63,7 +61,7 @@ const MyWishlist = () => {
                   <div>
                     <div className="avatar">
                       <div className="mask mask-squircle w-12 h-12">
-                        <img src={item.tour_image} />
+                        <img src={item.tour_image} alt={`Item ${index + 1}`} />
                       </div>
                     </div>
                   </div>
@@ -78,18 +76,20 @@ const MyWishlist = () => {
                   <h2>${item.price}</h2>
                 </th>
                 <th>
-                  <button
-                    className="btn btn-lg text-white bg-green-700 hover:text-black"
-                  >
-                    <FaSearchPlus></FaSearchPlus>{" "}
-                  </button>
+                  <Link to={`/packageDetails/${item.packageId}`}>
+                    <button
+                      className="btn btn-lg text-white bg-green-700 hover:text-black"
+                    >
+                      <FaSearchPlus />
+                    </button>
+                  </Link>
                 </th>
                 <th>
                   <button
                     onClick={() => handleDeletedCart(item._id)}
                     className="btn btn-lg text-white bg-red-700 hover:text-black"
                   >
-                    <FaTrash></FaTrash>{" "}
+                    <FaTrash />
                   </button>
                 </th>
               </tr>

@@ -28,6 +28,7 @@ import DashBoardCover from "../Pages/Dashboard/DashBoardCover";
 
 
 
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -107,10 +108,6 @@ export const router = createBrowserRouter([
         path: 'tourGuideProfile',
         element: <TourGuideRoute><TourGuideProfile></TourGuideProfile></TourGuideRoute>
       },
-      {
-        path: 'cart',
-        element: <TourGuideRoute><MyWishlist></MyWishlist></TourGuideRoute>
-      },
 
       // normal user
       {
@@ -120,6 +117,10 @@ export const router = createBrowserRouter([
       {
         path: 'touristProfile',
         element: <PrivateRoute><TouristProfile></TouristProfile></PrivateRoute>
+      },
+      {
+        path: 'cart',
+        element: <MyWishlist></MyWishlist>
       }
     ]
   }
