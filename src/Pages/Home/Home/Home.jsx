@@ -9,7 +9,7 @@ import TourType from "./TourType/TourType";
 
 const Home = () => {
     return (
-        <div className="bg-gray-100">
+        <div>
             <Banner></Banner>
             <TourismAndTravel></TourismAndTravel>
             <TourType></TourType>

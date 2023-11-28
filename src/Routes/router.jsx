@@ -28,6 +28,7 @@ import DashBoardCover from "../Pages/Dashboard/DashBoardCover";
 import AllStory from "../Pages/Home/Tourism_and_Travel_Guide/Stories/AllStory";
 import MyBookings from "../Pages/Dashboard/MyBookings/MyBookings";
 import TourGuideSingleCard from "../Pages/Home/Tourism_and_Travel_Guide/OurPackages/PackageDetails/TourGuideSingleCard";
+import TourTypePage from "../Pages/Home/Home/TourType/TourTypePage";
 
 
 
@@ -55,6 +56,11 @@ export const router = createBrowserRouter([
           path: '/tourGuideSingleCardDetails/:id',
           element: <TourGuideSingleCard></TourGuideSingleCard>,
           loader:() => fetch('http://localhost:5000/users')
+        },
+        {
+          path: '/tour/:type',
+          element: <TourTypePage></TourTypePage>
+
         },
         {
           path: '/login',
