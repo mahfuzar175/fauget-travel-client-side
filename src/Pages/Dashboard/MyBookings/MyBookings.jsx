@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
+
 import useBookings from "../../../hooks/useBookings";
-import { FaSearchPlus, FaTrash } from "react-icons/fa";
 
 const MyBookings = () => {
     const [booking, refetch] = useBookings();
@@ -19,7 +18,6 @@ const MyBookings = () => {
               <th>TOUR GUIDE NAME</th>
               <th>TOUR DATE</th>
               <th>TOURE PRICE</th>
-              <th>DELETE</th>
             </tr>
           </thead>
           <tbody>
@@ -38,14 +36,6 @@ const MyBookings = () => {
                 </td>
                 <th>
                   <h2>${item.price}</h2>
-                </th>
-                <th>
-                  <button
-                    
-                    className="btn btn-lg text-white bg-red-700 hover:text-black"
-                  >
-                    <FaTrash />
-                  </button>
                 </th>
               </tr>
             ))}

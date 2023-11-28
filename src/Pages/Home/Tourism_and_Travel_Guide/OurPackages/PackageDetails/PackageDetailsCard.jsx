@@ -4,21 +4,20 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import useAuth from "../../../../../hooks/useAuth";
 import Swal from "sweetalert2";
-import axios from "axios";
 import useAxiosSecure from "../../../../../hooks/useAxiosSecure";
 import useBookings from "../../../../../hooks/useBookings";
+import TourGuide from "./TourGuide";
 
 const PackageDetailsCard = ({ item }) => {
   const [tourGuides, setTourGuides] = useState([]);
   const [users] = useUser();
   const [startDate, setStartDate] = useState(new Date());
-  const {user} = useAuth()
-  const userName =  user.displayName;
+  const { user } = useAuth();
+  const userName = user.displayName;
   const userProfilePic = user.photoURL;
   const userEmail = user.email;
   const axiosSecure = useAxiosSecure();
   const [refetch] = useBookings();
-  
 
   useEffect(() => {
     const tourGuideUsers = users.filter((user) => user.role === "tourGuide");
@@ -55,75 +54,55 @@ const PackageDetailsCard = ({ item }) => {
     const tourGuide = form.tourGuide.value;
     const trip_title = form.trip_title.value;
 
-    if(user && user.email){
-      const newbooking = {
-        email: user.email,
-        tourist_name,
-        tourist_email,
-        tourist_image,
-        price,
-        date,
-        tourGuide,
-        trip_title
-  
-      };
-      axiosSecure.post('/bookings', newbooking)
-      .then(res =>{
-        console.log(res.data);
-        if(res.data.insertedId){
-          Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: `Added to your Bookings`,
-            showConfirmButton: false,
-            timer: 1500,
-          });
-          refetch();
-        }
-      })
-    }
-    else {
+    if (user && user.email) {
       Swal.fire({
-        title: "You are not Logged In!",
-        text: "Please login to add to the cart!",
-        icon: "warning",
+        title: "Confirm Your Booking",
+        text: "Are you sure you want to book this tour?",
+        icon: "question",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
-        confirmButtonText: "Go to Login!",
+        confirmButtonText: "Yes, Book it!",
+        cancelButtonText: "Cancel",
       }).then((result) => {
         if (result.isConfirmed) {
-          Swal.fire({
-            title: 'Added!',
-            text: "Your Bookings has benn Added",
-            icon: 'success'
-          });
+          const newbooking = {
+            email: user.email,
+            tourist_name,
+            tourist_email,
+            tourist_image,
+            price,
+            date,
+            tourGuide,
+            trip_title,
+          };
+
+          axiosSecure
+            .post("/bookings", newbooking)
+            .then((res) => {
+              console.log(res.data);
+              if (res.data.insertedId) {
+                Swal.fire({
+                  title: "Added!",
+                  text: "Your Bookings has been Added.",
+                  icon: "success",
+                  showCancelButton: false,
+                  confirmButtonText: "Go to Your Bookings",
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    window.location.href = "/dashboard/myBookings";
+                  }
+                });
+
+                refetch();
+              }
+            })
+            .catch((error) => {
+              console.error("Error booking:", error);
+            });
         }
       });
     }
-
-
-
-    // // send data to the server
-    // fetch("http://localhost:5000/stories", {
-    //   method: "POST",
-    //   headers: {
-    //     "content-type": "application/json",
-    //   },
-    //   body: JSON.stringify(newStory),
-    // })
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //     if (data.insertedId) {
-    //       Swal.fire({
-    //         title: "Success!",
-    //         text: "Story Added Successfully",
-    //         icon: "success",
-    //         confirmButtonText: "Ok",
-    //       });
-    //     }
-    //   });
   };
 
   return (
@@ -240,12 +219,21 @@ const PackageDetailsCard = ({ item }) => {
           </div>
         </div>
       </section>
-      <div className="mt-4 p-4">
+
+      {/* tour guide */}
+      <div>
+      <h2 className="mt-12 mb-6 text-3xl font-extrabold text-center">Tour Tour Guides</h2>
+        <TourGuide></TourGuide>
+      </div>
+
+      <div className="mt-8 p-4">
         {/* booking form */}
         <div>
           {/* form */}
           <div className="bg-gray-200 p-8">
-            <h2 className="flex justify-center items-center text-4xl font-extrabold mb-4">Booking</h2>
+            <h2 className="flex justify-center items-center text-4xl font-extrabold mb-4 underline">
+              Booking
+            </h2>
             <form onSubmit={handleBooking}>
               <div className="mb-6 gap-4">
                 <div className="form-control w-full">
@@ -339,8 +327,15 @@ const PackageDetailsCard = ({ item }) => {
                   <label className="label">
                     <span className="label-text">Tour Date*</span>
                   </label>
-                  <div className="input input-bordered w-full"><DatePicker required showIcon name="date" selected={startDate} onChange={(date) => setStartDate(date)} /></div>
-                  
+                  <div className="input input-bordered w-full">
+                    <DatePicker
+                      required
+                      showIcon
+                      name="date"
+                      selected={startDate}
+                      onChange={(date) => setStartDate(date)}
+                    />
+                  </div>
                 </div>
                 <div className="form-control md:w-1/2">
                   <label className="label">
@@ -352,7 +347,7 @@ const PackageDetailsCard = ({ item }) => {
                     required
                     className="input input-bordered w-full"
                   >
-                     <option value="" disabled selected hidden>
+                    <option value="" disabled selected hidden>
                       Select Tour Guide
                     </option>
                     {tourGuides.map((tourGuide) => (
@@ -371,7 +366,6 @@ const PackageDetailsCard = ({ item }) => {
                 className="btn btn-block btn-neutral"
               />
             </form>
-
           </div>
         </div>
       </div>
