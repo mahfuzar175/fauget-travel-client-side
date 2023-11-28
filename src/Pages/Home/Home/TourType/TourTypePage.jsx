@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import useTourPackages from "../../../../hooks/useTourPackages";
+import { Helmet } from "react-helmet-async";
 
 const TourTypePage = () => {
   const { type } = useParams();
@@ -12,6 +13,9 @@ const TourTypePage = () => {
 
   return (
     <div className="flex justify-center items-center mt-12">
+      <Helmet>
+                <title>Fauget Travel | Tour Type</title>
+            </Helmet>
       <div className="mt-16 mb-12">
         <h1 className="text-3xl font-extrabold text-center uppercase mb-6">
           {type} Tours

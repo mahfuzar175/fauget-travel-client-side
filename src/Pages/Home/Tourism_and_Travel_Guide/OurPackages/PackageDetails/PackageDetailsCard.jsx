@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 import useAxiosSecure from "../../../../../hooks/useAxiosSecure";
 import useBookings from "../../../../../hooks/useBookings";
 import TourGuide from "./TourGuide";
+import { Helmet } from "react-helmet-async";
 
 const PackageDetailsCard = ({ item }) => {
   const [tourGuides, setTourGuides] = useState([]);
@@ -107,6 +108,9 @@ const PackageDetailsCard = ({ item }) => {
 
   return (
     <div className="mt-16">
+      <Helmet>
+        <title>Fauget Travel | Package Details</title>
+      </Helmet>
       {/* gallery section */}
       <div>
         <section className="py-6 dark:bg-gray-800 dark:text-gray-50">
@@ -222,7 +226,9 @@ const PackageDetailsCard = ({ item }) => {
 
       {/* tour guide */}
       <div>
-      <h2 className="mt-12 mb-6 text-3xl font-extrabold text-center">Tour Tour Guides</h2>
+        <h2 className="mt-12 mb-6 text-3xl font-extrabold text-center">
+          Tour Tour Guides
+        </h2>
         <TourGuide></TourGuide>
       </div>
 

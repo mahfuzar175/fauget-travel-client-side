@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import TourGuideSingleCardData from "./TourGuideSingleCardData";
+import { Helmet } from "react-helmet-async";
 
 const TourGuideSingleCard = () => {
     const [item, setitem] = useState();
@@ -13,6 +14,9 @@ const TourGuideSingleCard = () => {
     //   console.log(item);
     return (
         <div>
+            <Helmet>
+                <title>Fauget Travel | Tour Guide Details</title>
+            </Helmet>
             <TourGuideSingleCardData item={item}></TourGuideSingleCardData>
         </div>
     );

@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 import pic from "../../assets/login/authentication2.png";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import SocialLogin from "../../components/SocialLogin/SocialLogin";
+import { Helmet } from "react-helmet-async";
 
 const SignUp = () => {
   const axiosPublic = useAxiosPublic();
@@ -54,6 +55,9 @@ const SignUp = () => {
   return (
     <>
       <div className="hero min-h-screen">
+        <Helmet>
+          <title>Fauget Travel | Sign Up</title>
+        </Helmet>
         <div className="hero-content flex-col lg:flex-row">
           <div className="flex flex-col justify-center items-center text-center md:w-1/2 lg:text-left">
             <h1 className="text-5xl font-bold mb-4">Register now!</h1>

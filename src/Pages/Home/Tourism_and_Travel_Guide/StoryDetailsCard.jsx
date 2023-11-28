@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import {
   FacebookIcon,
   FacebookShareButton,
@@ -30,6 +31,9 @@ const StoryDetailsCard = ({ item }) => {
 
   return (
     <div className="mt-20">
+      <Helmet>
+                <title>Fauget Travel | Story Details</title>
+            </Helmet>
       <section className="dark:bg-gray-800 dark:text-gray-100">
         <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
           <div className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
