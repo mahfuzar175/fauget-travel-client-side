@@ -2,13 +2,14 @@ import { FaCheck, FaExpeditedssl } from "react-icons/fa";
 import { MdPendingActions } from "react-icons/md";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
-import useBookings from "../../../hooks/useBookings";
+import useGuide from "../../../hooks/useGuide";
 import useAuth from "../../../hooks/useAuth";
 
 const MyAssignedTours = () => {
   const axiosSecure = useAxiosSecure();
-  const [booking, refetch] = useBookings();
+  const [booking, refetch] = useGuide();
   const { user } = useAuth();
+  console.log(user);
 
   const handleInReview = (item) => {
     axiosSecure.patch(`/bookings/inReview/${item._id}`).then((res) => {
@@ -62,7 +63,7 @@ const MyAssignedTours = () => {
     <div>
       <div>
         <div className="flex justify-around mb-4">
-          <h2 className="text-3xl font-semibold">BOOKING ITEMS</h2>
+          <h2 className="text-3xl font-semibold">ASSIGNED ITEMS</h2>
         </div>
         <div className="overflow-x-auto">
           <table className="table w-full ">
@@ -76,68 +77,63 @@ const MyAssignedTours = () => {
                 <th>REVIEW</th>
                 <th>REJECTED</th>
                 <th>ACCEPTED</th>
-                <th>PAY</th>
-                <th>CANCEL</th>
-                <th>APPLY</th>
               </tr>
             </thead>
             <tbody>
-              {booking
-                .filter((item) => user.name === item.tourGuide)
-                .map((item, index) => (
-                  <tr key={item._id}>
-                    <th>{index + 1}</th>
+              {booking.map((item, index) => (
+                <tr key={item._id}>
+                  <th>{index + 1}</th>
 
-                    <td>
-                      <h2>{item.trip_title}</h2>
-                    </td>
-                    <td>
-                      <h2>{item.tourGuide}</h2>
-                    </td>
-                    <td>
-                      <h2>{item.date}</h2>
-                    </td>
-                    <th>
-                      <h2>${item.price}</h2>
-                    </th>
-                    <th>
-                      {item.status === "inReview" ? (
-                        "In Review"
-                      ) : (
-                        <button
-                          onClick={() => handleInReview(item)}
-                          className="btn btn-lg text-white bg-[#D1A054] hover:text-black"
-                        >
-                          <MdPendingActions></MdPendingActions>{" "}
-                        </button>
-                      )}
-                    </th>
-                    <th>
-                      {item.status === "rejected" ? (
-                        "Rejected"
-                      ) : (
-                        <button
-                          onClick={() => handleReject(item)}
-                          className="btn btn-lg text-white bg-gray-800 hover:text-white"
-                        >
-                          <FaExpeditedssl></FaExpeditedssl>{" "}
-                        </button>
-                      )}
-                    </th>
-                    <th>
-                      {item.status === "accepted" ? (
-                        "Accepted"
-                      ) : (
-                        <button
-                          onClick={() => handleAccepted(item)}
-                          className="btn btn-lg text-white bg-emerald-700 hover:text-black"
-                        >
-                          <FaCheck></FaCheck>{" "}
-                        </button>
-                      )}
-                    </th>
-                  </tr>
-                ))}
+                  <td>
+                    <h2>{item.trip_title}</h2>
+                  </td>
+                  <td>
+                    <h2>{item.tourist_name}</h2>
+                  </td>
+                  <td>
+                    <h2>{item.date}</h2>
+                  </td>
+                  <th>
+                    <h2>${item.price}</h2>
+                  </th>
+                  <th>
+                    {item.status === "inReview" ? (
+                      "In Review"
+                    ) : (
+                      <button
+                        onClick={() => handleInReview(item)}
+                        className="btn btn-lg text-white bg-[#D1A054] hover:text-black"
+                      >
+                        <MdPendingActions></MdPendingActions>{" "}
+                      </button>
+                    )}
+                  </th>
+                  <th>
+                    {item.status === "rejected" ? (
+                      "Rejected"
+                    ) : (
+                      <button
+                        onClick={() => handleReject(item)}
+                        className="btn btn-lg text-white bg-gray-800 hover:text-white"
+                      >
+                        <FaExpeditedssl></FaExpeditedssl>{" "}
+                      </button>
+                    )}
+                  </th>
+                  <th>
+                    {item.status === "accepted" ? (
+                      "Accepted"
+                    ) : (
+                      <button
+                        onClick={() => handleAccepted(item)}
+                        className="btn btn-lg text-white bg-emerald-700 hover:text-black"
+                      >
+                        <FaCheck></FaCheck>{" "}
+                      </button>
+                    )}
+                  </th>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
