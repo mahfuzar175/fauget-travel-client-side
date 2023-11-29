@@ -50,12 +50,12 @@ export const router = createBrowserRouter([
         {
           path: '/packageDetails/:id',
           element: <PrivateRoute><PackageDetails></PackageDetails></PrivateRoute>,
-          loader:() => fetch('http://localhost:5000/travelPackages')
+          loader:() => fetch('https://b8a12-server-side-mahfuzar175.vercel.app/travelPackages')
         },
         { 
           path: '/tourGuideSingleCardDetails/:id',
           element: <TourGuideSingleCard></TourGuideSingleCard>,
-          loader:() => fetch('http://localhost:5000/users')
+          loader:() => fetch('https://b8a12-server-side-mahfuzar175.vercel.app/users')
         },
         {
           path: '/tour/:type',
@@ -81,7 +81,7 @@ export const router = createBrowserRouter([
         {
           path: '/storyDetails/:id',
           element: <StoryDetails></StoryDetails>,
-          loader: () => fetch('http://localhost:5000/stories')
+          loader: () => fetch('https://b8a12-server-side-mahfuzar175.vercel.app/stories')
         },
         {
           path: '/community',

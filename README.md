@@ -1,8 +1,51 @@
-# React + Vite
+# Fauget Travel - Tourist Guide Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [Live Link](https://fauget-travel.web.app/)
 
-Currently, two official plugins are available:
+Click here for the live link: [https://fauget-travel.web.app/](https://fauget-travel.web.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
+
+Fauget Travel is an online platform that offers comprehensive information and resources for travelers seeking guidance on popular destinations. The website supports three roles: Normal User/Tourist, Tour Guide, and Admin.
+
+## Features
+
+1. **User Authentication and Authorization:**
+   - Secure authentication system with roles.
+   - Authorization controls for different user roles.
+
+2. **Interactive User Profiles:**
+   - Display user profiles with profile pictures.
+   - Allow users to access and edit their profiles.
+
+3. **Tour Packages Section:**
+   - Engaging overview of available tour packages.
+   - Wishlist functionality and detailed package view.
+
+4. **Tour Guide Profiles:**
+   - Detailed profiles of tour guides.
+   - Review section for user ratings and comments.
+
+5. **Booking System:**
+   - Secure booking form with essential details.
+   - Booking process protection (requires login).
+
+6. **Tourist Story Section:**
+   - Real-life tourist stories with share option.
+   - Clickable stories for more details (requires login).
+
+7. **Dashboard Functionality:**
+   - Personalized dashboards for Tourist, Tour Guide, and Admin.
+   - Centralized location for managing profiles, bookings, and wishlists.
+
+8. **Admin Management Tools:**
+   - Admin dashboard for profile and user management.
+   - User role management (Admin/Tour Guide).
+
+9. **Package Details Page:**
+   - Informative package details page with gallery and tour plan.
+   - Accessible only to logged-in users.
+
+10. **Responsive Design and Accessibility:**
+    - Responsive design for various devices.
+    - Prioritized accessibility features.

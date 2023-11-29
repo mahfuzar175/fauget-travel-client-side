@@ -27,7 +27,7 @@ const AddStory = () => {
     console.log(newStory);
 
     // send data to the server
-    fetch("http://localhost:5000/stories", {
+    fetch("https://b8a12-server-side-mahfuzar175.vercel.app/stories", {
       method: "POST",
       headers: {
         "content-type": "application/json",

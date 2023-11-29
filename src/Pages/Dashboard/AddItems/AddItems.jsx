@@ -35,7 +35,7 @@ const AddItems = () => {
     console.log(newPackage);
 
     // send data to the server
-    fetch("http://localhost:5000/travelPackages", {
+    fetch("https://b8a12-server-side-mahfuzar175.vercel.app/travelPackages", {
       method: "POST",
       headers: {
         "content-type": "application/json",

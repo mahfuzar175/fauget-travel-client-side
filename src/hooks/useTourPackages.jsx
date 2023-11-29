@@ -4,7 +4,7 @@ const useTourPackages = () =>{
     const [packages, setPackage] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() =>{
-        fetch('http://localhost:5000/travelPackages')
+        fetch('https://b8a12-server-side-mahfuzar175.vercel.app/travelPackages')
         .then(res => res.json())
         .then(data => {
             setPackage(data)

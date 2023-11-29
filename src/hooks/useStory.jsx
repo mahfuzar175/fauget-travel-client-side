@@ -4,7 +4,7 @@ const useStory = () =>{
     const [story, setStory] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() =>{
-        fetch('http://localhost:5000/stories')
+        fetch('https://b8a12-server-side-mahfuzar175.vercel.app/stories')
         .then(res => res.json())
         .then(data => {
             setStory(data)

@@ -24,7 +24,7 @@ const AboutUs = () => {
               </div>
               <div className="md:mr-6">
                 <img
-                  src="https://i.ibb.co/P1PwWX5/history-3.jpg"
+                  src="https://i.ibb.co/Qkc7MZ2/ali-morshedlou-WMD64t-Mfc4k-unsplash.jpg"
                   className="max-w-sm rounded-lg shadow-2xl"
                 />
               </div>
