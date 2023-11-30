@@ -133,12 +133,12 @@ export const router = createBrowserRouter([
         path: 'tourGuideProfile',
         element: <TourGuideRoute><TourGuideProfile></TourGuideProfile></TourGuideRoute>
       },
-
-      // normal user
       {
         path: 'myAssignedTours',
         element: <PrivateRoute><MyAssignedTours></MyAssignedTours></PrivateRoute>
       },
+      
+      // normal user
       {
         path: 'touristProfile',
         element: <PrivateRoute><TouristProfile></TouristProfile></PrivateRoute>
