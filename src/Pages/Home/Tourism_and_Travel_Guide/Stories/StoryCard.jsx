@@ -5,7 +5,7 @@ const StoryCard = ({ item }) => {
   return (
     <Link to={`/storyDetails/${id}`} className="text-decoration-none">
     <div>
-      <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border border-gray-500 text-black">
+      <div className="container w-[462px] h-[280px] flex flex-col max-w-lg p-6 mx-auto divide-y rounded-md border border-gray-500 text-black">
 	<div className="flex justify-between p-4">
 		<div className="flex space-x-4">
 			<div>

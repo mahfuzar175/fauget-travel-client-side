@@ -1,47 +1,46 @@
 [
-    {
+  {
       "id": 1,
-      "spot_name": "Golden Gate Bridge",
-      "spot_image": "https://i.ibb.co/t4vJXRH/1.webp",
-      "location": "San Francisco, USA",
+      "spot_name": "Sundarbans Mangrove Forest",
+      "spot_image": "https://i.ibb.co/D8g4Dzk/Sundarban-Tiger.jpg",
+      "location": "Khulna, Bangladesh",
       "posted_date": "3 days ago",
       "tourist_image": "https://i.ibb.co/pfXD4rh/member1.png",
       "tourist_name": "Alex",
-      "journey_review": "Explored the Golden Gate Park nearby and then walked across the bridge. The architecture atmosphere is so calming.",
+      "journey_review": "Explored the beauty of the Sundarbans Mangrove Forest. The unique ecosystem and wildlife are truly mesmerizing.",
       "rating": "4"
-    },
-    {
+  },
+  {
       "id": 2,
-      "spot_name": "Eiffel Tower",
-      "spot_image": "https://i.ibb.co/tb7rhFY/2.jpg",
-      "location": "Paris, France",
+      "spot_name": "Cox's Bazar Sea Beach",
+      "spot_image": "https://i.ibb.co/2FKL7fs/cox.jpg",
+      "location": "Cox's Bazar, Bangladesh",
       "posted_date": "7 days ago",
       "tourist_image": "https://i.ibb.co/BZKTMdD/member2.png",
       "tourist_name": "Sophie",
-      "journey_review": "Visited the Eiffel Tower at night when it was all lit up. It was a magical experience. The cityscape from the top is breathtaking!",
+      "journey_review": "Visited Cox's Bazar Sea Beach and experienced the longest natural sea beach in the world. The sunset view is breathtaking!",
       "rating": "5"
-    },
-    {
+  },
+  {
       "id": 3,
-      "spot_name": "Machu Picchu",
-      "spot_image": "https://i.ibb.co/D5Jkp1L/3.jpg",
-      "location": "Cusco, Peru",
+      "spot_name": "Historic Mosque City of Bagerhat",
+      "spot_image": "https://i.ibb.co/LrGxcXx/bagh1.jpg",
+      "location": "Bagerhat, Bangladesh",
       "posted_date": "3 days ago",
       "tourist_image": "https://i.ibb.co/BZKTMdD/member2.png",
       "tourist_name": "Isabella",
-      "journey_review": "Explored the history of the Incas and marveled at the precision of the stone architecture. Machu Picchu is a true wonder!",
+      "journey_review": "Explored the historic Mosque City of Bagerhat, marveling at the ancient architecture and rich cultural heritage.",
       "rating": "4"
-    },
-    {
+  },
+  {
       "id": 4,
-      "spot_name": "Great Barrier Reef",
-      "spot_image": "https://i.ibb.co/prCRtsS/4.jpg",
-      "location": "Queensland, Australia",
+      "spot_name": "Srimangal Tea Gardens",
+      "spot_image": "https://i.ibb.co/C21NQM2/sri.jpg",
+      "location": "Srimangal, Bangladesh",
       "posted_date": "11 days ago",
       "tourist_image": "https://i.ibb.co/FDZH1Br/member3.png",
       "tourist_name": "Oliver",
-      "journey_review": "Snorkeled at the Great Barrier Reef and witnessed the vibrant coral and diverse marine life. A dream come true for any nature lover!",
+      "journey_review": "Explored the lush green tea gardens of Srimangal and learned about the tea production process. A paradise for nature lovers!",
       "rating": "5"
-    }
-  ]
-  
+  }
+]

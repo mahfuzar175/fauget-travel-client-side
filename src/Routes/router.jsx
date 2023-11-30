@@ -29,6 +29,7 @@ import AllStory from "../Pages/Home/Tourism_and_Travel_Guide/Stories/AllStory";
 import MyBookings from "../Pages/Dashboard/MyBookings/MyBookings";
 import TourGuideSingleCard from "../Pages/Home/Tourism_and_Travel_Guide/OurPackages/PackageDetails/TourGuideSingleCard";
 import TourTypePage from "../Pages/Home/Home/TourType/TourTypePage";
+import MeetOurTourGuideSingleCard from "../Pages/Home/Tourism_and_Travel_Guide/MeetOurTourGuideSingleCard";
 
 
 
@@ -55,6 +56,12 @@ export const router = createBrowserRouter([
         { 
           path: '/tourGuideSingleCardDetails/:id',
           element: <TourGuideSingleCard></TourGuideSingleCard>,
+          loader:() => fetch('https://b8a12-server-side-mahfuzar175.vercel.app/users')
+        },
+
+        { 
+          path: '/meetOurTourGuideSingleCardDetails/:id',
+          element: <MeetOurTourGuideSingleCard></MeetOurTourGuideSingleCard>,
           loader:() => fetch('https://b8a12-server-side-mahfuzar175.vercel.app/users')
         },
         {

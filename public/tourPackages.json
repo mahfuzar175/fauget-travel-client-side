@@ -55,13 +55,13 @@
     "day2_activity": "Museum Visits",
     "day2_description": "Visit local museums and learn about the culture.",
     "img1": "https://i.ibb.co/T0HtTwj/nandu-menon-h-GHldb-Cg-YDA-unsplash.jpg",
-    "img2": "https://i.ibb.co/jf0b3f9/Peru-Seniors-Travel-optimized.jpg",
+    "img2": "https://i.ibb.co/SRkHcRm/culture1.png",
     "img3": "https://i.ibb.co/YTD3c8g/dddddh.jpg",
     "img4": "https://i.ibb.co/pymxQf1/web-Quandamooka-Dances-QYAC.jpg"
   },
   {
     "id": 5,
-    "tour_image": "https://i.ibb.co/r0hbbyd/budi-puspa-wijaya-Lcv7dqnw5-Y4-unsplash.jpg",
+    "tour_image": "https://i.ibb.co/d2Gq2Wk/Nabanna-Festival-06.jpg",
     "tour_type": "Cultural",
     "trip_title": "Cultural Heritage Expedition",
     "price": "1750",
@@ -151,7 +151,7 @@
   },  
   {
     "id": 11,
-    "tour_image": "https://i.ibb.co/t4vJXRH/1.webp",
+    "tour_image": "https://i.ibb.co/fS22GTn/city-tour1.jpg",
     "tour_type": "City",
     "trip_title": "Urban Adventure",
     "price": "1000",
@@ -159,15 +159,15 @@
     "day1_description": "Arrive at the wellness resort and check into your peaceful retreat.",
     "day2_activity": "City Landmarks Tour",
     "day2_description": "Explore iconic landmarks of the city.",
-    "img1": "https://i.ibb.co/6H0Lqr3/pngtree-kunshan-pyramid-real-estate-tour-station-future-city-image-864023.jpg",
-    "img2": "https://i.ibb.co/kqHBHSR/128397b0-57d2-4183-b9fb-bf6a5254d19c.jpg",
-    "img3": "https://i.ibb.co/cbwxgmH/2a.jpg",
-    "img4": "https://i.ibb.co/6ngbkGY/lovepik-phoenix-ancient-city-tourism-picture-501140377.jpg"
+    "img1": "https://i.ibb.co/Rjn3VSz/city4.jpg",
+    "img2": "https://i.ibb.co/W5vLV5P/city5.jpg",
+    "img3": "https://i.ibb.co/ZGmP2R4/city7.jpg",
+    "img4": "https://i.ibb.co/94sDm19/city6.jpg"
 
   },
   {
     "id": 12,
-    "tour_image": "https://i.ibb.co/tb7rhFY/2.jpg",
+    "tour_image": "https://i.ibb.co/BBxXBLL/city2.jpg",
     "tour_type": "City",
     "trip_title": "Metropolitan Discovery",
     "price": "1200",
@@ -175,14 +175,14 @@
     "day1_description": "Arrive at the stylish city hotel and relax in your urban retreat.",
     "day2_activity": "Cultural District Exploration",
     "day2_description": "Immerse yourself in the cultural richness of the city's vibrant districts.",
-    "img1": "https://i.ibb.co/6H0Lqr3/pngtree-kunshan-pyramid-real-estate-tour-station-future-city-image-864023.jpg",
-    "img2": "https://i.ibb.co/kqHBHSR/128397b0-57d2-4183-b9fb-bf6a5254d19c.jpg",
-    "img3": "https://i.ibb.co/cbwxgmH/2a.jpg",
-    "img4": "https://i.ibb.co/6ngbkGY/lovepik-phoenix-ancient-city-tourism-picture-501140377.jpg"
+    "img1": "https://i.ibb.co/Rjn3VSz/city4.jpg",
+    "img2": "https://i.ibb.co/W5vLV5P/city5.jpg",
+    "img3": "https://i.ibb.co/ZGmP2R4/city7.jpg",
+    "img4": "https://i.ibb.co/94sDm19/city6.jpg"
   },
   {
     "id": 13,
-    "tour_image": "https://i.ibb.co/xFvqCtB/yaron-cohen-Yj-OE3-Jmcl-Ic-unsplash.jpg",
+    "tour_image": "https://i.ibb.co/TgCkbXP/city3.jpg",
     "tour_type": "City",
     "trip_title": "Modern Urban Escape",
     "price": "1300",
@@ -190,10 +190,10 @@
     "day1_description": "Check into a luxurious city hotel, setting the tone for your modern urban escape.",
     "day2_activity": "Shopping and Culinary Adventure",
     "day2_description": "Embark on a shopping spree and indulge in a culinary adventure in the city's vibrant scene.",
-    "img1": "https://i.ibb.co/6H0Lqr3/pngtree-kunshan-pyramid-real-estate-tour-station-future-city-image-864023.jpg",
-    "img2": "https://i.ibb.co/kqHBHSR/128397b0-57d2-4183-b9fb-bf6a5254d19c.jpg",
-    "img3": "https://i.ibb.co/cbwxgmH/2a.jpg",
-    "img4": "https://i.ibb.co/6ngbkGY/lovepik-phoenix-ancient-city-tourism-picture-501140377.jpg"
+    "img1": "https://i.ibb.co/Rjn3VSz/city4.jpg",
+    "img2": "https://i.ibb.co/W5vLV5P/city5.jpg",
+    "img3": "https://i.ibb.co/ZGmP2R4/city7.jpg",
+    "img4": "https://i.ibb.co/94sDm19/city6.jpg"
   }
   
 ]
