@@ -9,7 +9,7 @@ const AllStory = () => {
             <Helmet>
                 <title>Fauget Travel | All Story</title>
             </Helmet>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-2 gap-4">
             {
                 story.map(item =><StoryCard
                 key={item.id}
