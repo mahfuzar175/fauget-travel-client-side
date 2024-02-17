@@ -82,7 +82,7 @@ const Navbar = () => {
           <a className="font-serif flex justify-center items-center">
             <img className="w-[60px]" src={icon} alt="" />
             <a className="normal-case flex font-serif font-bold text-lg">
-              FAUGET TRAVEL
+              FAUGET TRAVEL s
             </a>
           </a>
         </div>
