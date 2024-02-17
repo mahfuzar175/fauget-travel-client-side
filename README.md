@@ -3,6 +3,8 @@
 ## [Live Link](https://fauget-travel.web.app/)
 
 Click here for the live link: [https://fauget-travel.web.app/](https://fauget-travel.web.app/)
+- Demo Admin email: admin@gmail.com
+- Demo Admin password: Admin@123456
 
 ## Overview
 
