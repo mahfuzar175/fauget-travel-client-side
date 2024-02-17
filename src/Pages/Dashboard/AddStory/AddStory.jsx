@@ -53,7 +53,9 @@ const AddStory = () => {
       <div>
         {/* form */}
         <div className="bg-gray-200 p-8">
-        <h2 className="flex justify-center items-center text-4xl font-extrabold mb-4 underline">Add A Story</h2>
+          <h2 className="flex justify-center items-center text-4xl font-extrabold mb-4 underline">
+            Add A Story
+          </h2>
           <form onSubmit={handleAddPackage}>
             <div className="md:flex mb-6 gap-4">
               <div className="form-control md:w-1/2">

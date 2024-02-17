@@ -18,25 +18,25 @@ const Navbar = () => {
 
   const navOptions = (
     <>
-      <li>
+      <li className="hover:text-slate-300">
         <NavLink to="/">HOME</NavLink>
       </li>
-      <li>
+      <li className="hover:text-slate-300">
         <NavLink to="/community">COMMUNITY</NavLink>
       </li>
-      <li>
+      <li className="hover:text-slate-300">
         <NavLink to="/story">BLOGS</NavLink>
       </li>
-      <li>
+      <li className="hover:text-slate-300">
         <NavLink to="/aboutUs">ABOUT US</NavLink>
       </li>
-      <li>
+      <li className="hover:text-slate-300">
         <NavLink to="/contactUs">CONTACT US</NavLink>
       </li>
       {user ? (
         <>
           {/*<li><span>{user?.displayName}</span></li>*/}
-          <li>
+          <li className="hover:text-slate-300">
             <button onClick={handleLogOut} className="btn btn-ghost text-sm">
               LOGOUT
             </button>
@@ -44,7 +44,7 @@ const Navbar = () => {
         </>
       ) : (
         <>
-          <li>
+          <li className="hover:text-slate-300">
             <NavLink to="/login">LOGIN</NavLink>
           </li>
         </>
@@ -53,7 +53,7 @@ const Navbar = () => {
   );
   return (
     <>
-      <div className="navbar p-4 fixed z-30 bg-opacity-30 bg-black text-white">
+      <div className="navbar p-2 fixed z-30 lg:bg-opacity-30 bg-white text-black lg:bg-black border lg:border-none lg:text-white font-Lato">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -73,21 +73,21 @@ const Navbar = () => {
               </svg>
             </label>
             <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black bg-opacity-80 rounded-box w-52"
+              
+              className="mt-3 z-[1] p-2 shadow dropdown-content bg-black text-white bg-opacity-90 rounded-md w-48"
             >
               {navOptions}
             </ul>
           </div>
           <a className="font-serif flex justify-center items-center">
             <img className="w-[60px]" src={icon} alt="" />
-            <a className="normal-case font-serif font-bold text-lg">
+            <a className="normal-case flex font-serif font-bold text-lg">
               FAUGET TRAVEL
             </a>
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navOptions}</ul>
+          <ul className="flex space-x-8 justify-center items-center">{navOptions}</ul>
         </div>
         <div className="navbar-end">
         <div className="dropdown dropdown-end">
@@ -96,17 +96,17 @@ const Navbar = () => {
           <img alt="Tailwind CSS Navbar component" src={userProfilePic} />
         </div>
       </label>
-      <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-black bg-opacity-90 rounded-box w-52">
+      <ul className="mt-3 z-[1] p-2 shadow dropdown-content bg-black text-white bg-opacity-90 rounded-md w-48">
         <li>
           <a className="justify-between">
             {userName}
           </a>
         </li>
-        <li><NavLink to="/dashboard/dashboardCover">Dashboard</NavLink></li>
+        <li className="hover:text-slate-300"><NavLink to="/dashboard/dashboardCover">Dashboard</NavLink></li>
         {user ? (
         <>
           {/*<li><span>{user?.displayName}</span></li>*/}
-          <li>
+          <li className="hover:text-slate-300">
             <button onClick={handleLogOut} className="btn btn-ghost text-sm">
               Logout
             </button>
@@ -114,7 +114,7 @@ const Navbar = () => {
         </>
       ) : (
         <>
-          <li>
+          <li className="hover:text-slate-300">
             <NavLink to="/login">Login</NavLink>
           </li>
         </>
