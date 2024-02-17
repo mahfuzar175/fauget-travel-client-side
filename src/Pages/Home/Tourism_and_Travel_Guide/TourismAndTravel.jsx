@@ -5,12 +5,12 @@ import OurPackages from "./OurPackages/OurPackages";
 import MeetOurTourGuide from "./MeetOurTourGuide";
 const TourismAndTravel = () => {
   return (
-    <div className="mt-16">
-      <div className="justify-center items-center text-center">
-      <h2 className="text-4xl font-Lato font-extrabold">
+    <div className="mt-16 min-h-full">
+      <div className="justify-center items-center text-center mb-6">
+      <h2 className="text-4xl font-serif font-extrabold ">
         Tourism and Travel Guide
       </h2>
-      <p>We offer you the most exciting activities so you can have the most unforgettable vacations.</p>
+      <p className="font-serif">We offer you the most exciting activities so you can have the most unforgettable vacations.</p>
       </div>
         <Tabs className='font-medium text-sm' defaultIndex={1} onSelect={(index) => console.log(index)}>
           <TabList>

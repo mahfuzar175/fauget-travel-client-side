@@ -56,8 +56,8 @@ const PacakgeCard = ({ item }) => {
   };
 
   return (
-    <div>
-      <div className="relative flex w-full max-w-[26rem] flex-col bg-white bg-clip-border text-gray-700 border">
+    <div className="p-4">
+      {/* <div className="relative flex w-full max-w-[26rem] flex-col bg-white bg-clip-border text-gray-700 border">
         <div className="relative text-white bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
           <img className="w-[414px] h-[276px]"
             src={tour_image}
@@ -98,7 +98,36 @@ const PacakgeCard = ({ item }) => {
             <Link to={`/packageDetails/${_id}`}> <button className="btn btn-primary w-full">View Details</button></Link>
           </div>
         </div>
-      </div>
+      </div> */}
+      
+
+      <div className="bg-white rounded-lg shadow-lg p-4 font-Lato hover:border hover:border-gray-300">
+            <div className="relative overflow-hidden">
+              <img className="object-cover md:w-[414px] md:h-[276px]" src={tour_image} alt="Product" />
+              <div className="absolute inset-0 bg-black opacity-40"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+              <Link to={`/packageDetails/${_id}`}> <button className="bg-white text-gray-900 py-2 px-6 rounded-full font-bold hover:bg-gray-300">View Details</button></Link>
+                
+              </div>
+            </div>
+            <h3 className="text-xl font-extrabold text-gray-900 mt-4 ">{tour_type}</h3>
+            <p className="text-gray-500 text-sm mt-2">{trip_title}</p>
+            <div className="flex items-center justify-between mt-4">
+              <span className="text-gray-900 font-bold text-lg">${price}</span>
+              <button onClick={handleAddtoCart} className="bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800">Add to Cart</button>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };
