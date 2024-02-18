@@ -2,7 +2,7 @@ import icon from '../../assets/Icon/Travel.png'
 
 const Footer = () => {
     return (
-        <footer className="px-4 divide-y bg-gray-800 text-gray-100 font-bold">
+        <footer className="px-4 divide-y bg-black text-gray-100 font-bold font-Lato">
           <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
             <div className="lg:w-1/3">
               <a

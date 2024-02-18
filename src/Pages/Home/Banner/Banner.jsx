@@ -23,7 +23,7 @@ const Banner = () => {
             {slides.map((slide, index) => (
                 <div key={index} className="relative">
                     <img src={slide.image} alt={`Slide ${index + 1}`} />
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold  bg-opacity-40 bg-black md:p-16 p-2"> <p className="md:text-xl text-sm text-base-100 font-serif">{slide.heading}</p> <br /> <p className="font-extrabold text-xl md:text-5xl">{slide.heading2}</p></div>
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold  bg-opacity-20 bg-black md:p-16 p-2"> <p className="md:text-xl text-sm text-base-100 font-serif">{slide.heading}</p> <br /> <p className="font-extrabold text-xl md:text-5xl">{slide.heading2}</p></div>
                 </div>
             ))}
         </Carousel>

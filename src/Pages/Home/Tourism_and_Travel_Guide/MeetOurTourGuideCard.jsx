@@ -6,7 +6,7 @@ const MeetOurTourGuideCard = ({ tourGuide }) => {
     <div>
       <Link to={`/meetOurTourGuideSingleCardDetails/${_id}`}>
       <div className="flex justify-center items-center">
-      <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 border dark:bg-gray-900 dark:text-gray-100">
+      <div className="flex flex-col justify-center max-w-xs p-6 hover:border hover:border-gray-400 shadow-sm rounded-xl sm:px-12 border dark:bg-gray-900 dark:text-gray-100">
         <img
           src={photo
           }

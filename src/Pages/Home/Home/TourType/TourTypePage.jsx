@@ -20,7 +20,7 @@ const TourTypePage = () => {
         <h1 className="text-3xl font-extrabold text-center uppercase mb-6">
           {type} Tours
         </h1>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 font-Lato">
           {filteredPackages.map((packages) => (
             <div key={packages._id}>
               <div>
@@ -33,16 +33,14 @@ const TourTypePage = () => {
                   </div>
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-2">
-                      <h5 className="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
-                        Tour Type: {packages.tour_type}
+                      <h5 className="ext-xl font-extrabold text-gray-900 block font-sans text-xl antialiased leading-snug tracking-normal text-blue-gray-900">
+                        {packages.tour_type}
                       </h5>
-                      <p className="flex items-center gap-1.5  font-sans text-base font-bold leading-relaxed text-blue-gray-900 antialiased">
+                      <p className="flex items-center gap-1.5  font-sans leading-relaxed text-blue-gray-900 antialiased text-gray-900 font-bold text-lg">
                         ${packages.price}
                       </p>
                     </div>
-                    <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700 mb-2">
-                      {packages.trip_title}
-                    </p>
+                    <p className="text-gray-500 text-sm mt-2">{packages.trip_title}</p>
                   </div>
                 </div>
               </div>
