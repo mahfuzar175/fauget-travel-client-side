@@ -30,20 +30,21 @@ const StoryDetailsCard = ({ item }) => {
   const instrashareUrl = "https://www.instagram.com";
 
   return (
-    <div className="mt-20">
+    <div className="mt-24">
       <Helmet>
-                <title>Fauget Travel | Story Details</title>
-            </Helmet>
+        <title>Fauget Travel | Story Details</title>
+      </Helmet>
       <section className="dark:bg-gray-800 dark:text-gray-100">
         <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
           <div className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
             <img
               src={spot_image}
               alt=""
-              className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
+              className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500 transform transition duration-500  
+              hover:scale-105"
             />
             <div className="p-6 space-y-2 lg:col-span-5">
-              <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">
+              <h3 className="text-2xl font-semibold sm:text-4xl underline group-focus:underline">
                 {spot_name}
               </h3>
               <div className="flex justify-between">

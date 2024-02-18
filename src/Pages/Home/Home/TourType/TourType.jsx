@@ -13,7 +13,7 @@ const TourType = () => {
     ];
 
     return (
-        <div className="mt-16 mb-12 bg-gray-800 p-12 text-white text-center">
+        <div className="mt-16 mb-12  p-12  text-center">
             <p className='text-xs underline font-mono'>Find a Tour by</p>
             <h1 className="text-3xl font-bold text-center mb-4">TOUR TYPE</h1>
             <hr className='mb-6'/>

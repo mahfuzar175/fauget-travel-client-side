@@ -2,7 +2,7 @@
 const AboutUs = () => {
     return (
       <div>
-        <section className="max-w-5xl mx-auto mt-24">
+        <section className="max-w-5xl min-h-screen mx-auto mt-24">
           <h2 className="text-4xl font-bold text-center">About Us</h2>
           <div className="hero">
             <div className="hero-content flex-col lg:flex-row-reverse">
@@ -12,7 +12,7 @@ const AboutUs = () => {
                   <span className="text-5xl font-bold text-black">
                     Founded in 1970 <br /> by
                   </span>
-                  , <span className="text-5xl font-bold text-pink-500">Chairman Jay Martin</span>
+                  , <span className="text-4xl font-bold text-pink-500">Chairman Jay Martin</span>
                 </p>
                 <p className="text-gray-500">The Juice Plus+ Company has grown from a small, direct-sales company into a highly successful, privately held health and wellness company operatinLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <p className="list-disc pl-8 mt-2 font-semibold">
@@ -25,7 +25,7 @@ const AboutUs = () => {
               <div className="md:mr-6">
                 <img
                   src="https://i.ibb.co/Qkc7MZ2/ali-morshedlou-WMD64t-Mfc4k-unsplash.jpg"
-                  className="max-w-sm rounded-lg shadow-2xl"
+                  className="max-w-sm h-[450px] rounded-lg shadow-2xl"
                 />
               </div>
             </div>

@@ -15,7 +15,7 @@ const StoryDetails = () => {
     console.log(item);
 
     return (
-        <div>
+        <div className="min-h-screen">
             <StoryDetailsCard item={item}></StoryDetailsCard>
         </div>
     );
