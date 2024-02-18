@@ -15,9 +15,9 @@ const OurPackages = () => {
         ))}
       </div>
       </div>
-      <div className="mt-4 flex justify-center items-center">
+      <div className="mt-2 flex justify-center md:justify-end mr-16 items-center">
         <Link to="/allPackages">
-        <button className="btn btn-outline rounded-full">All Packages...</button>
+        <button className="btn btn-outline rounded-full">All Packages</button>
             
 
         </Link>

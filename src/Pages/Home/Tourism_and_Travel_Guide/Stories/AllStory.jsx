@@ -5,11 +5,13 @@ import StoryCard from "./StoryCard";
 const AllStory = () => {
     const [story] = useStory();
     return (
-        <div className="flex justify-center items-center mt-28 mb-8 p-6">
+        <div className="flex justify-center items-center mt-20 mb-8 p-6">
             <Helmet>
                 <title>Fauget Travel | All Story</title>
             </Helmet>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div>
+            <h2 className="text-4xl text-center font-bold mb-8">Tourist Story</h2>
+            <div className="grid md:grid-cols-3 gap-4">
             {
                 story.map(item =><StoryCard
                 key={item.id}
@@ -17,6 +19,7 @@ const AllStory = () => {
                 ></StoryCard>)
             }
         </div>
+            </div>
         </div>
     );
 };

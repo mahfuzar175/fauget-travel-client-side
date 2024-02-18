@@ -25,7 +25,7 @@ const TourType = () => {
   };
 
   return (
-    <div className="mt-28">
+    <div className="mt-[100px]">
       <div className="p-24 text-center" style={backgroundImageStyle}>
       <h2 className="font-bold text-center text-4xl mb-8">
         Choose a Tour Type
@@ -34,7 +34,7 @@ const TourType = () => {
           <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-8 mb-2">
             {tourTypes.map(({ type, icon: Icon }) => (
               <Link key={type} to={`/tour/${type.toLowerCase()}`}>
-                <div className="w-32 h-32 border flex flex-row justify-center items-center bg-white rounded-full shadow-2xl shadow-black">
+                <div className="w-32 h-32 border flex flex-row justify-center hover:border hover:border-gray-500 items-center bg-white rounded-full shadow-2xl shadow-black">
                   <div className="flex flex-col gap-1">
                     <Icon className="w-12 h-12"></Icon>
                     <p>{type}</p>

@@ -4,8 +4,8 @@ const ContactUs = () => {
   };
   return (
     <div>
-      <section className="dark:bg-slate-800 min-h-screen" id="contact">
-        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-20">
+      <section className="dark:bg-slate-800 bg-slate-50 mt-6" id="contact">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-16">
           <div className="mb-2">
             <div className="mb-4 max-w-2xl text-center sm:text-center md:mx-auto md:mb-4">
               <h2 className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
@@ -17,13 +17,13 @@ const ContactUs = () => {
             <div className="grid md:grid-cols-2">
               <div className="h-full pr-6">
                 <p className="mt-3 mb-12 text-lg text-gray-500 dark:text-slate-400">
-                  "Contact us for assistance and inquiries. We welcome your
+                  Contact us for assistance and inquiries. We welcome your
                   feedback and look forward to hearing from you. Our team is
-                  ready to help and respond promptly."
+                  ready to help and respond promptly
                 </p>
                 <ul className="mb-6 md:mb-0">
                   <li className="flex">
-                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <div className="flex h-10 w-10 items-center justify-center rounded bg-gray-900 text-gray-50">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -53,7 +53,7 @@ const ContactUs = () => {
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <div className="flex h-10 w-10 items-center justify-center rounded bg-gray-900 text-gray-50">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -84,7 +84,7 @@ const ContactUs = () => {
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <div className="flex h-10 w-10 items-center justify-center rounded bg-gray-900 text-gray-50">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -170,7 +170,7 @@ const ContactUs = () => {
                     <button
                       onClick={handleSend}
                       type="submit"
-                      className="w-full bg-blue-800 btn btn-outline text-white px-6 py-3 font-xl rounded-md sm:mb-0"
+                      className="w-full btn btn-outline px-6 py-3 font-xl rounded-md sm:mb-0"
                     >
                       Send Message
                     </button>

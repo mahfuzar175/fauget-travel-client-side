@@ -5,22 +5,22 @@ import StoryCard from "./StoryCard";
 const Stories = () => {
   const [story] = useStory();
   return (
-    <div className="mt-24">
+    <div className="mt-[90px]">
       <div className="space-y-2 text-center">
-			<h2 className="text-3xl font-bold">Tourist Story</h2>
-			<p className="font-serif text-sm dark:text-gray-400">Qualisque erroribus usu at, duo te agam soluta mucius.</p>
+			<h2 className="text-4xl font-bold">Tourist Story</h2>
+			<p className="text-base md:text-lg text-gray-600 dark:text-gray-400">Dive into the enchanting narratives of global wanderings and unforgettable escapades <br /> in our Tourist Story section.</p>
 		</div>
-      <div className="flex justify-center flex-row items-center p-4">
-        <div className="grid md:grid-cols-2 gap-4">
-          {story.slice(0, 4).map((item) => (
+      <div className="flex justify-center flex-row items-center p-4 mt-4">
+        <div className="grid md:grid-cols-3 gap-4">
+          {story.slice(0, 3).map((item) => (
             <StoryCard key={item.id} item={item} />
           ))}
         </div>
       </div>
-      <div className="mt-4 flex justify-center items-center mb-12">
+      <div className="mt-2 mr-16 flex justify-center md:justify-end items-center mb-8">
         <Link to="/allStory">
-          <button className="btn btn-primary bg-green-600 hover:bg-green-500 border-none text-white px-4 py-2 rounded-lg">
-            All Stories
+          <button className="btn btn-outline rounded-full">
+            More Stories
           </button>
         </Link>
       </div>

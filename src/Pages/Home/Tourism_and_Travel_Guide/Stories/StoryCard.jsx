@@ -4,16 +4,16 @@ const StoryCard = ({ item }) => {
   const { id, spot_name, location, posted_date, tourist_image, tourist_name, journey_review, rating} = item;
   return (
     <Link to={`/storyDetails/${id}`} className="text-decoration-none">
-    <div>
-      <div className="container w-[462px] h-[280px] flex flex-col max-w-lg p-6 mx-auto divide-y rounded-md border border-gray-500 text-black">
+    <div className="story-card-container transition-transform hover:scale-105 hover:shadow-md">
+      <div className="container w-[400px] h-[280px] shadow-2xl font-Lato flex flex-col max-w-lg p-6 mx-auto divide-y rounded-md border-gray-200">
 	<div className="flex justify-between p-4">
 		<div className="flex space-x-4">
 			<div>
-				<img src={tourist_image} alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
+				<img src={tourist_image} alt="" className="object-cover w-14 h-14 rounded-full dark:bg-gray-500" />
 			</div>
 			<div>
-				<h4 className="font-bold">{tourist_name}</h4>
-				<span className="text-xs dark:text-gray-400">{posted_date}</span>
+				<h4 className="font-bold text-lg font-serif">{tourist_name}</h4>
+				<span className="text-xs text-gray-400 dark:text-gray-400">{posted_date}</span>
 			</div>
 		</div>
 		<div className="flex items-center space-x-2 text-yellow-500">
@@ -24,8 +24,8 @@ const StoryCard = ({ item }) => {
 		</div>
 	</div>
 	<div className="p-4 space-y-2 text-sm dark:text-gray-400">
-		<p>{spot_name}, {location}</p>
-		<p className="text-base">{journey_review}</p>
+		<p className="font-semibold">{spot_name}, {location}</p>
+		<p>{journey_review}</p>
 	</div>
 </div>
     </div>

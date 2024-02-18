@@ -34,7 +34,7 @@ const StoryDetailsCard = ({ item }) => {
       <Helmet>
         <title>Fauget Travel | Story Details</title>
       </Helmet>
-      <section className="dark:bg-gray-800 dark:text-gray-100">
+      <section className="dark:bg-gray-800 dark:text-gray-100 font-Lato">
         <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
           <div className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
             <img
@@ -44,7 +44,7 @@ const StoryDetailsCard = ({ item }) => {
               hover:scale-105"
             />
             <div className="p-6 space-y-2 lg:col-span-5">
-              <h3 className="text-2xl font-semibold sm:text-4xl underline group-focus:underline">
+              <h3 className="text-2xl font-bold sm:text-3xl text-center mb-8">
                 {spot_name}
               </h3>
               <div className="flex justify-between">

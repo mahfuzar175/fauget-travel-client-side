@@ -5,7 +5,7 @@ import OurPackages from "./OurPackages/OurPackages";
 import MeetOurTourGuide from "./MeetOurTourGuide";
 const TourismAndTravel = () => {
   return (
-    <div className="mt-24 min-h-screen">
+    <div className="mt-20">
       <div className="justify-center items-center text-center mb-8">
         <h2 className="text-4xl font-Lato font-extrabold">
           Tourism & our travel guide
