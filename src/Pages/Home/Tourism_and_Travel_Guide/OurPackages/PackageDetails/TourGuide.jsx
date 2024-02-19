@@ -13,7 +13,7 @@ const TourGuide = () => {
     
     return (
         <div className="flex justify-center items-center">
-            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 p-4">
+            <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4">
             {tourGuides.map((tourGuide) => (
                       <TourGuideDetailsCard key={tourGuide._id} tourGuide={tourGuide}>
                         

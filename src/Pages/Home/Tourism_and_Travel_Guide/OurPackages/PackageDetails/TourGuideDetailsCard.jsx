@@ -6,17 +6,17 @@ const TourGuideDetailsCard = ({ tourGuide }) => {
     <div>
       <Link to={`/tourGuideSingleCardDetails/${_id}`}>
       <div className="flex justify-center items-center">
-      <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 border dark:bg-gray-900 dark:text-gray-100">
+      <div className="flex flex-col w-[290px] h-[290px] justify-center p-6 hover:border hover:border-gray-400 shadow-md rounded-sm sm:px-10 dark:bg-gray-900 dark:text-gray-100">
         <img
           src={photo
           }
           alt=""
-          className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square"
+          className="w-28 h-28 mx-auto rounded-full dark:bg-gray-500 aspect-square"
         />
         <div className="space-y-4 text-center divide-y dark:divide-gray-700">
           <div className="my-2 space-y-1">
             <h2 className="text-base font-semibold">{name}</h2>
-            <h2 className="font-medium text-xs">{email}</h2>
+            <h2 className="font-medium text-gray-500 text-xs">{email}</h2>
             <p className="text-xs sm:text-base dark:text-gray-400">
             <div className="badge badge-secondary p-3 border border-black font-semibold">{role}</div>
             </p>
@@ -40,7 +40,7 @@ const TourGuideDetailsCard = ({ tourGuide }) => {
               rel="noopener noreferrer"
               href="#"
               aria-label="Dribble"
-              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400"
+              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 text-pink-500"
             >
               <svg
                 viewBox="0 0 512 512"
@@ -54,7 +54,7 @@ const TourGuideDetailsCard = ({ tourGuide }) => {
               rel="noopener noreferrer"
               href="#"
               aria-label="Twitter"
-              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400"
+              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 text-blue-600"
             >
               <svg
                 viewBox="0 0 512 512"
@@ -68,7 +68,7 @@ const TourGuideDetailsCard = ({ tourGuide }) => {
               rel="noopener noreferrer"
               href="#"
               aria-label="Email"
-              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400"
+              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 text-green-700"
             >
               <svg
                 viewBox="0 0 512 512"

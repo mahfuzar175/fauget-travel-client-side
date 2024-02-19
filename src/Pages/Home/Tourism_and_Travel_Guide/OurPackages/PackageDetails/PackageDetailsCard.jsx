@@ -227,7 +227,7 @@ const PackageDetailsCard = ({ item }) => {
       {/* tour guide */}
       <div>
         <h2 className="mt-12 mb-6 text-3xl font-extrabold text-center">
-          Tour Tour Guides
+          Tour Guides
         </h2>
         <TourGuide></TourGuide>
       </div>
