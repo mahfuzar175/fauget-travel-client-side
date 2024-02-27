@@ -17,7 +17,7 @@ const Stories = () => {
           ))}
         </div>
       </div>
-      <div className="mt-2 mr-[198px] flex justify-center md:justify-end items-center mb-8">
+      <div className="mt-2 mr-[201px] flex justify-center md:justify-end items-center mb-8">
         <Link to="/allStory">
           <button className="btn btn-outline rounded-full">
             More Stories
