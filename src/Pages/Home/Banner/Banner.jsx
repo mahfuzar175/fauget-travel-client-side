@@ -19,7 +19,7 @@ const Banner = () => {
     ];
 
     return (
-        <Carousel className="text-center lg:mt-0 mt-14" autoPlay interval={3000} infiniteLoop>
+        <Carousel className="text-center lg:mt-0 mt-[76px]" autoPlay interval={3000} infiniteLoop>
             {slides.map((slide, index) => (
                 <div key={index} className="relative">
                     <img src={slide.image} alt={`Slide ${index + 1}`} />
