@@ -2,7 +2,7 @@ import ReactPlayer from "react-player";
 import "./Overview.css";
 const Overview = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 p-2 mt-2">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 p-4 mt-2">
       <div className="player-wrapper hover:shadow-md hover:shadow-blue-600">
         <ReactPlayer
           className="react-player"
